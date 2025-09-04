@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: unit1tablenadmore.ma
-//Last modified: Wed, Sep 03, 2025 09:11:01 PM
+//Last modified: Wed, Sep 03, 2025 09:15:00 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "98B67AD9-47D9-2D94-F0BE-15BF2BCDAD93";
+fileInfo "UUID" "7F96D291-4546-AEBF-0594-8EA0EDFE47A1";
 createNode transform -s -n "persp";
 	rename -uid "E41F601A-42A7-0E5B-23AA-C5A1693076B5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -12.875216064800178 18.956508655845042 -25.202659752041484 ;
-	setAttr ".r" -type "double3" -31.538352729444256 -155.79999999995829 0 ;
+	setAttr ".t" -type "double3" -10.454127577125732 11.087361237255855 -14.769350976488678 ;
+	setAttr ".r" -type "double3" -28.538352729441289 -150.19999999995744 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "04C775DD-4B98-13A2-B480-0FB983BE7D3F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 37.082899201608889;
+	setAttr ".coi" 24.129458887086265;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -115,6 +115,7 @@ createNode mesh -n "pCylinderShape2" -p "pCylinder2";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.49999988079071045 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -645,6 +646,37 @@ createNode polyExtrudeFace -n "pasted__polyExtrudeFace6";
 createNode polyCube -n "pasted__polyCube2";
 	rename -uid "F098204F-4B6D-E4C4-FAF3-DAA8EC9C7FC0";
 	setAttr ".cuv" 4;
+createNode polyCut -n "polyCut1";
+	rename -uid "35CF1C32-49CB-6417-FFEE-CAB6256A06F3";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 2 "f[0:3]" "f[14:19]";
+	setAttr ".ix" -type "matrix" 0.44109887915386192 0 0 0 0 1.7799082435374585 0 0 0 0 0.46344131085402002 0
+		 1.3322676295501878e-15 2.0477449010766051 0.09680090129444352 1;
+	setAttr ".pc" -type "double3" -8.3756409000000005 3.71538514 -13.29193268 ;
+	setAttr ".ro" -type "double3" 178.56791093999999 -88.693016510000007 -90 ;
+createNode polyCut -n "polyCut2";
+	rename -uid "377D6BE8-45AB-4E2D-4832-FCA8DD280472";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[4:13]";
+	setAttr ".ix" -type "matrix" 0.44109887915386192 0 0 0 0 1.7799082435374585 0 0 0 0 0.46344131085402002 0
+		 1.3322676295501878e-15 2.0477449010766051 0.09680090129444352 1;
+	setAttr ".pc" -type "double3" 8.3756409000000005 3.71538514 -13.29193268 ;
+	setAttr ".ro" -type "double3" -178.56791093999999 -88.693016510000007 -90 ;
+createNode polyCollapseEdge -n "polyCollapseEdge1";
+	rename -uid "F7D03566-4FA5-F03B-8A16-C3A028DC29D7";
+	setAttr ".ics" -type "componentList" 2 "e[121]" "e[131]";
+createNode polyExtrudeFace -n "polyExtrudeFace10";
+	rename -uid "30DB42A1-494E-4293-3440-59812E5E21CB";
+	setAttr ".ics" -type "componentList" 1 "f[60:79]";
+	setAttr ".ix" -type "matrix" 0.44109887915386192 0 0 0 0 1.7799082435374585 0 0 0 0 0.46344131085402002 0
+		 1.3322676295501878e-15 2.0477449010766051 0.09680090129444352 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" -7.8874628e-08 3.506495 0.096800871 ;
+	setAttr ".rs" 63904;
+	setAttr ".lt" -type "double3" -2.7755575615628914e-17 -4.8092638050880362e-16 0.30079832556120256 ;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -0.44109898432002859 3.1853365892745984 -0.36664063054561413 ;
+	setAttr ".cbx" -type "double3" 0.44109882657077926 3.8276533567956608 0.5602423778879918 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -695,7 +727,7 @@ select -ne :hardwareRenderGlobals;
 connectAttr "FloorLyr.di" "pCube1.do";
 connectAttr "polyCube1.out" "FloorMesh.i";
 connectAttr "polyExtrudeFace5.out" "pCylinderShape1.i";
-connectAttr "polyCylinder2.out" "pCylinderShape2.i";
+connectAttr "polyExtrudeFace10.out" "pCylinderShape2.i";
 connectAttr "polyTorus1.out" "pTorusShape1.i";
 connectAttr "pCube2_scaleX.o" "pCube2.sx";
 connectAttr "pCube2_scaleY.o" "pCube2.sy";
@@ -752,6 +784,13 @@ connectAttr "pasted__polyExtrudeFace6.out" "pasted__polyExtrudeFace7.ip";
 connectAttr "pasted__pCubeShape2.wm" "pasted__polyExtrudeFace7.mp";
 connectAttr "pasted__polyCube2.out" "pasted__polyExtrudeFace6.ip";
 connectAttr "pasted__pCubeShape2.wm" "pasted__polyExtrudeFace6.mp";
+connectAttr "polyCylinder2.out" "polyCut1.ip";
+connectAttr "pCylinderShape2.wm" "polyCut1.mp";
+connectAttr "polyCut1.out" "polyCut2.ip";
+connectAttr "pCylinderShape2.wm" "polyCut2.mp";
+connectAttr "polyCut2.out" "polyCollapseEdge1.ip";
+connectAttr "polyCollapseEdge1.out" "polyExtrudeFace10.ip";
+connectAttr "pCylinderShape2.wm" "polyExtrudeFace10.mp";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "FloorMesh.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
