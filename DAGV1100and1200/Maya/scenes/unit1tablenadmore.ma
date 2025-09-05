@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: unit1tablenadmore.ma
-//Last modified: Wed, Sep 03, 2025 09:15:00 PM
+//Last modified: Wed, Sep 03, 2025 09:21:35 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "7F96D291-4546-AEBF-0594-8EA0EDFE47A1";
+fileInfo "UUID" "6C55A434-4C3B-FC7C-96D4-6781AC3EF71A";
 createNode transform -s -n "persp";
 	rename -uid "E41F601A-42A7-0E5B-23AA-C5A1693076B5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -10.454127577125732 11.087361237255855 -14.769350976488678 ;
-	setAttr ".r" -type "double3" -28.538352729441289 -150.19999999995744 0 ;
+	setAttr ".t" -type "double3" -19.267792399641237 8.3743643695542147 -17.415923194315123 ;
+	setAttr ".r" -type "double3" -17.138352729424799 -137.39999999993344 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "04C775DD-4B98-13A2-B480-0FB983BE7D3F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 24.129458887086265;
+	setAttr ".coi" 29.913045510259728;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -135,81 +135,6 @@ createNode mesh -n "pTorusShape1" -p "pTorus1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "pCube2";
-	rename -uid "857F4885-4E77-90A9-79A3-2FB243250977";
-	setAttr ".t" -type "double3" -7.1152154132302439 2 0.14244524753992405 ;
-	setAttr -av ".ty";
-	setAttr ".s" -type "double3" 1.8430803426531974 0.27748860535595887 2.0200295854246195 ;
-	setAttr -av ".sx";
-	setAttr -av ".sy";
-	setAttr -av ".sz";
-createNode mesh -n "pCubeShape1" -p "pCube2";
-	rename -uid "84A23FCE-402E-5336-B172-1A823B4A92B8";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 47 ".pt";
-	setAttr ".pt[0]" -type "float3" 1.7881393e-07 8.9406967e-08 2.3841858e-07 ;
-	setAttr ".pt[1]" -type "float3" -1.7881393e-07 8.9406967e-08 2.3841858e-07 ;
-	setAttr -av ".pt[2].px";
-	setAttr -av ".pt[2].py";
-	setAttr -av ".pt[2].pz";
-	setAttr -av ".pt[3].px";
-	setAttr -av ".pt[3].py";
-	setAttr -av ".pt[3].pz";
-	setAttr -av ".pt[4].px";
-	setAttr -av ".pt[4].py";
-	setAttr -av ".pt[4].pz";
-	setAttr -av ".pt[5].px";
-	setAttr -av ".pt[5].py";
-	setAttr -av ".pt[5].pz";
-	setAttr ".pt[6]" -type "float3" 0.010541737 0.39200652 0.010289103 ;
-	setAttr ".pt[7]" -type "float3" -1.7881393e-07 8.9406967e-08 -2.3841858e-07 ;
-	setAttr ".pt[8]" -type "float3" -0.010292292 0.39200658 0.010541737 ;
-	setAttr ".pt[9]" -type "float3" -0.010292292 0.39200658 -0.010541707 ;
-	setAttr ".pt[12]" -type "float3" 0.010292351 0.39200658 0.010538548 ;
-	setAttr ".pt[13]" -type "float3" 0.010292351 0.39200658 -0.010538518 ;
-	setAttr ".pt[23]" -type "float3" 0.010541737 0.39200652 -0.010288596 ;
-	setAttr ".pt[24]" -type "float3" 0.010292828 0.39200658 0.010541737 ;
-	setAttr ".pt[25]" -type "float3" 0.010292828 0.39200658 -0.010541707 ;
-	setAttr ".pt[28]" -type "float3" -0.010288656 0.39200658 0.010538548 ;
-	setAttr ".pt[29]" -type "float3" -0.010288656 0.39200658 -0.010538518 ;
-	setAttr ".pt[37]" -type "float3" -0.010537982 0.39200652 0.010289103 ;
-	setAttr ".pt[39]" -type "float3" -0.010537982 0.39200652 -0.010288596 ;
-	setAttr ".pt[41]" -type "float3" -0.010292292 0.39200658 -0.010542274 ;
-	setAttr ".pt[43]" -type "float3" 0.010292828 0.39200658 -0.010542274 ;
-	setAttr ".pt[44]" -type "float3" -0.010292292 0.39200658 0.010542214 ;
-	setAttr ".pt[46]" -type "float3" 0.010292828 0.39200658 0.010542214 ;
-	setAttr ".pt[48]" -type "float3" 0.010292351 0.39200658 0.010542214 ;
-	setAttr ".pt[51]" -type "float3" -0.010288656 0.39200658 0.010542214 ;
-	setAttr ".pt[53]" -type "float3" 0.010292351 0.39200658 -0.010537982 ;
-	setAttr ".pt[54]" -type "float3" -0.010288656 0.39200658 -0.010537982 ;
-	setAttr ".pt[56]" -type "float3" 0.010541737 -0.39200306 0.010289103 ;
-	setAttr ".pt[57]" -type "float3" 0.010541737 -0.39200306 -0.010288596 ;
-	setAttr ".pt[58]" -type "float3" -0.010537982 -0.39200306 0.010289103 ;
-	setAttr ".pt[59]" -type "float3" -0.010537982 -0.39200306 -0.010288596 ;
-	setAttr ".pt[60]" -type "float3" -0.010292292 -0.39200306 0.010541737 ;
-	setAttr ".pt[61]" -type "float3" 0.010292828 -0.39200306 0.010541737 ;
-	setAttr ".pt[62]" -type "float3" -0.010292292 -0.39200306 -0.010542274 ;
-	setAttr ".pt[63]" -type "float3" 0.010292828 -0.39200306 -0.010542274 ;
-	setAttr ".pt[64]" -type "float3" -0.010292292 -0.39200306 -0.010541707 ;
-	setAttr ".pt[65]" -type "float3" 0.010292828 -0.39200306 -0.010541707 ;
-	setAttr ".pt[66]" -type "float3" 0.010292828 -0.39200306 0.010542214 ;
-	setAttr ".pt[67]" -type "float3" -0.010292292 -0.39200306 0.010542214 ;
-	setAttr ".pt[68]" -type "float3" 0.010292351 -0.39200306 -0.010538518 ;
-	setAttr ".pt[69]" -type "float3" -0.010288656 -0.39200306 -0.010538518 ;
-	setAttr ".pt[70]" -type "float3" 0.010292351 -0.39200306 0.010542214 ;
-	setAttr ".pt[71]" -type "float3" -0.010288656 -0.39200306 0.010542214 ;
-	setAttr ".pt[72]" -type "float3" 0.010292351 -0.39200306 0.010538548 ;
-	setAttr ".pt[73]" -type "float3" -0.010288656 -0.39200306 0.010538548 ;
-	setAttr ".pt[74]" -type "float3" -0.010288656 -0.39200306 -0.010537982 ;
-	setAttr ".pt[75]" -type "float3" 0.010292351 -0.39200306 -0.010537982 ;
 createNode transform -n "group";
 	rename -uid "B0479475-4F5F-40C2-AB98-718AA751FA4B";
 	setAttr ".t" -type "double3" 7.8537838937040698 -0.11173794275244964 -6.9126762852087786 ;
@@ -228,66 +153,618 @@ createNode mesh -n "pasted__pCubeShape2" -p "pasted__pCube2";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.125 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 45 ".pt";
-	setAttr ".pt[0]" -type "float3" 1.7881393e-07 8.9406967e-08 2.3841858e-07 ;
-	setAttr ".pt[1]" -type "float3" -1.7881393e-07 8.9406967e-08 2.3841858e-07 ;
-	setAttr ".pt[6]" -type "float3" 0.010541737 0.39200652 0.010289103 ;
-	setAttr ".pt[7]" -type "float3" -1.7881393e-07 8.9406967e-08 -2.3841858e-07 ;
-	setAttr ".pt[8]" -type "float3" -0.010292292 0.39200658 0.010541737 ;
-	setAttr ".pt[9]" -type "float3" -0.010292292 0.39200658 -0.010541707 ;
-	setAttr ".pt[12]" -type "float3" 0.010292351 0.39200658 0.010538548 ;
-	setAttr ".pt[13]" -type "float3" 0.010292351 0.39200658 -0.010538518 ;
-	setAttr ".pt[23]" -type "float3" 0.010541737 0.39200652 -0.010288596 ;
-	setAttr ".pt[24]" -type "float3" 0.010292828 0.39200658 0.010541737 ;
-	setAttr ".pt[25]" -type "float3" 0.010292828 0.39200658 -0.010541707 ;
-	setAttr ".pt[28]" -type "float3" -0.010288656 0.39200658 0.010538548 ;
-	setAttr ".pt[29]" -type "float3" -0.010288656 0.39200658 -0.010538518 ;
-	setAttr ".pt[37]" -type "float3" -0.010537982 0.39200652 0.010289103 ;
-	setAttr ".pt[39]" -type "float3" -0.010537982 0.39200652 -0.010288596 ;
-	setAttr ".pt[41]" -type "float3" -0.010292292 0.39200658 -0.010542274 ;
-	setAttr ".pt[43]" -type "float3" 0.010292828 0.39200658 -0.010542274 ;
-	setAttr ".pt[44]" -type "float3" -0.010292292 0.39200658 0.010542214 ;
-	setAttr ".pt[46]" -type "float3" 0.010292828 0.39200658 0.010542214 ;
-	setAttr ".pt[48]" -type "float3" 0.010292351 0.39200658 0.010542214 ;
-	setAttr ".pt[51]" -type "float3" -0.010288656 0.39200658 0.010542214 ;
-	setAttr ".pt[53]" -type "float3" 0.010292351 0.39200658 -0.010537982 ;
-	setAttr ".pt[54]" -type "float3" -0.010288656 0.39200658 -0.010537982 ;
-	setAttr ".pt[56]" -type "float3" 0.010541737 -0.39200306 0.010289103 ;
-	setAttr ".pt[57]" -type "float3" 0.010541737 -0.39200306 -0.010288596 ;
-	setAttr ".pt[58]" -type "float3" -0.010537982 -0.39200306 0.010289103 ;
-	setAttr ".pt[59]" -type "float3" -0.010537982 -0.39200306 -0.010288596 ;
-	setAttr ".pt[60]" -type "float3" -0.010292292 -0.39200306 0.010541737 ;
-	setAttr ".pt[61]" -type "float3" 0.010292828 -0.39200306 0.010541737 ;
-	setAttr ".pt[62]" -type "float3" -0.010292292 -0.39200306 -0.010542274 ;
-	setAttr ".pt[63]" -type "float3" 0.010292828 -0.39200306 -0.010542274 ;
-	setAttr ".pt[64]" -type "float3" -0.010292292 -0.39200306 -0.010541707 ;
-	setAttr ".pt[65]" -type "float3" 0.010292828 -0.39200306 -0.010541707 ;
-	setAttr ".pt[66]" -type "float3" 0.010292828 -0.39200306 0.010542214 ;
-	setAttr ".pt[67]" -type "float3" -0.010292292 -0.39200306 0.010542214 ;
-	setAttr ".pt[68]" -type "float3" 0.010292351 -0.39200306 -0.010538518 ;
-	setAttr ".pt[69]" -type "float3" -0.010288656 -0.39200306 -0.010538518 ;
-	setAttr ".pt[70]" -type "float3" 0.010292351 -0.39200306 0.010542214 ;
-	setAttr ".pt[71]" -type "float3" -0.010288656 -0.39200306 0.010542214 ;
-	setAttr ".pt[72]" -type "float3" 0.010292351 -0.39200306 0.010538548 ;
-	setAttr ".pt[73]" -type "float3" -0.010288656 -0.39200306 0.010538548 ;
-	setAttr ".pt[74]" -type "float3" -0.010288656 -0.39200306 -0.010537982 ;
-	setAttr ".pt[75]" -type "float3" 0.010292351 -0.39200306 -0.010537982 ;
+	setAttr -s 88 ".pt[0:87]" -type "float3"  0 0 0.081599295 0 0 0.081599295 
+		0 0 0.082368016 0 0 0.082368016 0 0 0.020183146 0 0 0.020183146 0 0 0.021408319 0 
+		0 0.02003029 0 0 0.021439463 0 0 0.082314253 0 0 0.020183146 0 0 0.082368016 0 0 
+		0.021438926 0 0 0.082314849 0 0 0.082368016 0 0 0.020183146 0 0 0.075832605 0 0 0.075832605 
+		0 0 0.076601386 0 0 0.076601386 0 0 0 0 0 0 0 0 0 0 0 -0.0013257265 0 0 0.021237493 
+		0 0 0.081367552 0 0 0.020014107 0 0 0.081524193 0 0 0.021236658 0 0 0.081367552 0 
+		0 0.081524193 0 0 0.020014107 0 0 0.080721915 0 0 0.081484079 0 0 0.074955106 0 0 
+		0.075717926 0 0 0.020006448 0 0 0.021196634 0 0 0 0 0 -0.0013124347 0 0 -0.00049346685 
+		0 0 -0.001850009 0 0 -0.00048935413 0 0 -0.0018327832 0 0 0.075593233 0 0 0.076412022 
+		0 0 0.074644864 0 0 0.075569868 0 0 0.075593233 0 0 0.076412022 0 0 0.075569868 0 
+		0 0.074644864 0 0 -0.00049346685 0 0 -0.0018501282 0 0 -0.0018327832 0 0 -0.00048935413 
+		0 0 0.013677925 0 0 -0.00084972382 0 0 0.013519645 0 0 -0.0008379817 0 0 0.013696879 
+		0 0 0.013546199 0 0 -0.0011843443 0 0 -0.0011718869 0 0 0.046975553 0 0 0.046309471 
+		0 0 0.040071428 0 0 0.040716767 0 0 0.046975434 0 0 0.04630965 0 0 0.040716767 0 
+		0 0.040071428 0 0 0.013697237 0 0 0.013545513 0 0 -0.0011705756 0 0 -0.0011842251 
+		0 0 0.020183146 0 0 0.020183146 0 0 0 0 0 0 0 0 0.020183146 0 0 0.020014107 0 0 -0.00048935413 
+		0 0 -0.00049346685 0 0 0.020183146 0 0 0.020014107 0 0 -0.00049346685 0 0 -0.00048935413;
+	setAttr -s 88 ".pt";
+	setAttr -av ".pt[0].px";
+	setAttr -av ".pt[0].py";
+	setAttr -av ".pt[0].pz";
+	setAttr -av ".pt[1].px";
+	setAttr -av ".pt[1].py";
+	setAttr -av ".pt[1].pz";
+	setAttr -av ".pt[2].px";
+	setAttr -av ".pt[2].py";
+	setAttr -av ".pt[2].pz";
+	setAttr -av ".pt[3].px";
+	setAttr -av ".pt[3].py";
+	setAttr -av ".pt[3].pz";
+	setAttr -av ".pt[4].px";
+	setAttr -av ".pt[4].py";
+	setAttr -av ".pt[4].pz";
+	setAttr -av ".pt[5].px";
+	setAttr -av ".pt[5].py";
+	setAttr -av ".pt[5].pz";
+	setAttr -av ".pt[6].px";
+	setAttr -av ".pt[6].py";
+	setAttr -av ".pt[6].pz";
+	setAttr -av ".pt[7].px";
+	setAttr -av ".pt[7].py";
+	setAttr -av ".pt[7].pz";
+	setAttr -av ".pt[8].px";
+	setAttr -av ".pt[8].py";
+	setAttr -av ".pt[8].pz";
+	setAttr -av ".pt[9].px";
+	setAttr -av ".pt[9].py";
+	setAttr -av ".pt[9].pz";
+	setAttr -av ".pt[10].px";
+	setAttr -av ".pt[10].py";
+	setAttr -av ".pt[10].pz";
+	setAttr -av ".pt[11].px";
+	setAttr -av ".pt[11].py";
+	setAttr -av ".pt[11].pz";
+	setAttr -av ".pt[12].px";
+	setAttr -av ".pt[12].py";
+	setAttr -av ".pt[12].pz";
+	setAttr -av ".pt[13].px";
+	setAttr -av ".pt[13].py";
+	setAttr -av ".pt[13].pz";
+	setAttr -av ".pt[14].px";
+	setAttr -av ".pt[14].py";
+	setAttr -av ".pt[14].pz";
+	setAttr -av ".pt[15].px";
+	setAttr -av ".pt[15].py";
+	setAttr -av ".pt[15].pz";
+	setAttr -av ".pt[16].px";
+	setAttr -av ".pt[16].py";
+	setAttr -av ".pt[16].pz";
+	setAttr -av ".pt[17].px";
+	setAttr -av ".pt[17].py";
+	setAttr -av ".pt[17].pz";
+	setAttr -av ".pt[18].px";
+	setAttr -av ".pt[18].py";
+	setAttr -av ".pt[18].pz";
+	setAttr -av ".pt[19].px";
+	setAttr -av ".pt[19].py";
+	setAttr -av ".pt[19].pz";
+	setAttr -av ".pt[20].px";
+	setAttr -av ".pt[20].py";
+	setAttr -av ".pt[20].pz";
+	setAttr -av ".pt[21].px";
+	setAttr -av ".pt[21].py";
+	setAttr -av ".pt[21].pz";
+	setAttr -av ".pt[22].px";
+	setAttr -av ".pt[22].py";
+	setAttr -av ".pt[22].pz";
+	setAttr -av ".pt[23].px";
+	setAttr -av ".pt[23].py";
+	setAttr -av ".pt[23].pz";
+	setAttr -av ".pt[24].px";
+	setAttr -av ".pt[24].py";
+	setAttr -av ".pt[24].pz";
+	setAttr -av ".pt[25].px";
+	setAttr -av ".pt[25].py";
+	setAttr -av ".pt[25].pz";
+	setAttr -av ".pt[26].px";
+	setAttr -av ".pt[26].py";
+	setAttr -av ".pt[26].pz";
+	setAttr -av ".pt[27].px";
+	setAttr -av ".pt[27].py";
+	setAttr -av ".pt[27].pz";
+	setAttr -av ".pt[28].px";
+	setAttr -av ".pt[28].py";
+	setAttr -av ".pt[28].pz";
+	setAttr -av ".pt[29].px";
+	setAttr -av ".pt[29].py";
+	setAttr -av ".pt[29].pz";
+	setAttr -av ".pt[30].px";
+	setAttr -av ".pt[30].py";
+	setAttr -av ".pt[30].pz";
+	setAttr -av ".pt[31].px";
+	setAttr -av ".pt[31].py";
+	setAttr -av ".pt[31].pz";
+	setAttr -av ".pt[32].px";
+	setAttr -av ".pt[32].py";
+	setAttr -av ".pt[32].pz";
+	setAttr -av ".pt[33].px";
+	setAttr -av ".pt[33].py";
+	setAttr -av ".pt[33].pz";
+	setAttr -av ".pt[34].px";
+	setAttr -av ".pt[34].py";
+	setAttr -av ".pt[34].pz";
+	setAttr -av ".pt[35].px";
+	setAttr -av ".pt[35].py";
+	setAttr -av ".pt[35].pz";
+	setAttr -av ".pt[36].px";
+	setAttr -av ".pt[36].py";
+	setAttr -av ".pt[36].pz";
+	setAttr -av ".pt[37].px";
+	setAttr -av ".pt[37].py";
+	setAttr -av ".pt[37].pz";
+	setAttr -av ".pt[38].px";
+	setAttr -av ".pt[38].py";
+	setAttr -av ".pt[38].pz";
+	setAttr -av ".pt[39].px";
+	setAttr -av ".pt[39].py";
+	setAttr -av ".pt[39].pz";
+	setAttr -av ".pt[40].px";
+	setAttr -av ".pt[40].py";
+	setAttr -av ".pt[40].pz";
+	setAttr -av ".pt[41].px";
+	setAttr -av ".pt[41].py";
+	setAttr -av ".pt[41].pz";
+	setAttr -av ".pt[42].px";
+	setAttr -av ".pt[42].py";
+	setAttr -av ".pt[42].pz";
+	setAttr -av ".pt[43].px";
+	setAttr -av ".pt[43].py";
+	setAttr -av ".pt[43].pz";
+	setAttr -av ".pt[44].px";
+	setAttr -av ".pt[44].py";
+	setAttr -av ".pt[44].pz";
+	setAttr -av ".pt[45].px";
+	setAttr -av ".pt[45].py";
+	setAttr -av ".pt[45].pz";
+	setAttr -av ".pt[46].px";
+	setAttr -av ".pt[46].py";
+	setAttr -av ".pt[46].pz";
+	setAttr -av ".pt[47].px";
+	setAttr -av ".pt[47].py";
+	setAttr -av ".pt[47].pz";
+	setAttr -av ".pt[48].px";
+	setAttr -av ".pt[48].py";
+	setAttr -av ".pt[48].pz";
+	setAttr -av ".pt[49].px";
+	setAttr -av ".pt[49].py";
+	setAttr -av ".pt[49].pz";
+	setAttr -av ".pt[50].px";
+	setAttr -av ".pt[50].py";
+	setAttr -av ".pt[50].pz";
+	setAttr -av ".pt[51].px";
+	setAttr -av ".pt[51].py";
+	setAttr -av ".pt[51].pz";
+	setAttr -av ".pt[52].px";
+	setAttr -av ".pt[52].py";
+	setAttr -av ".pt[52].pz";
+	setAttr -av ".pt[53].px";
+	setAttr -av ".pt[53].py";
+	setAttr -av ".pt[53].pz";
+	setAttr -av ".pt[54].px";
+	setAttr -av ".pt[54].py";
+	setAttr -av ".pt[54].pz";
+	setAttr -av ".pt[55].px";
+	setAttr -av ".pt[55].py";
+	setAttr -av ".pt[55].pz";
+	setAttr -av ".pt[56].px";
+	setAttr -av ".pt[56].py";
+	setAttr -av ".pt[56].pz";
+	setAttr -av ".pt[57].px";
+	setAttr -av ".pt[57].py";
+	setAttr -av ".pt[57].pz";
+	setAttr -av ".pt[58].px";
+	setAttr -av ".pt[58].py";
+	setAttr -av ".pt[58].pz";
+	setAttr -av ".pt[59].px";
+	setAttr -av ".pt[59].py";
+	setAttr -av ".pt[59].pz";
+	setAttr -av ".pt[60].px";
+	setAttr -av ".pt[60].py";
+	setAttr -av ".pt[60].pz";
+	setAttr -av ".pt[61].px";
+	setAttr -av ".pt[61].py";
+	setAttr -av ".pt[61].pz";
+	setAttr -av ".pt[62].px";
+	setAttr -av ".pt[62].py";
+	setAttr -av ".pt[62].pz";
+	setAttr -av ".pt[63].px";
+	setAttr -av ".pt[63].py";
+	setAttr -av ".pt[63].pz";
+	setAttr -av ".pt[64].px";
+	setAttr -av ".pt[64].py";
+	setAttr -av ".pt[64].pz";
+	setAttr -av ".pt[65].px";
+	setAttr -av ".pt[65].py";
+	setAttr -av ".pt[65].pz";
+	setAttr -av ".pt[66].px";
+	setAttr -av ".pt[66].py";
+	setAttr -av ".pt[66].pz";
+	setAttr -av ".pt[67].px";
+	setAttr -av ".pt[67].py";
+	setAttr -av ".pt[67].pz";
+	setAttr -av ".pt[68].px";
+	setAttr -av ".pt[68].py";
+	setAttr -av ".pt[68].pz";
+	setAttr -av ".pt[69].px";
+	setAttr -av ".pt[69].py";
+	setAttr -av ".pt[69].pz";
+	setAttr -av ".pt[70].px";
+	setAttr -av ".pt[70].py";
+	setAttr -av ".pt[70].pz";
+	setAttr -av ".pt[71].px";
+	setAttr -av ".pt[71].py";
+	setAttr -av ".pt[71].pz";
+	setAttr -av ".pt[72].px";
+	setAttr -av ".pt[72].py";
+	setAttr -av ".pt[72].pz";
+	setAttr -av ".pt[73].px";
+	setAttr -av ".pt[73].py";
+	setAttr -av ".pt[73].pz";
+	setAttr -av ".pt[74].px";
+	setAttr -av ".pt[74].py";
+	setAttr -av ".pt[74].pz";
+	setAttr -av ".pt[75].px";
+	setAttr -av ".pt[75].py";
+	setAttr -av ".pt[75].pz";
+	setAttr -av ".pt[76].px";
+	setAttr -av ".pt[76].py";
+	setAttr -av ".pt[76].pz";
+	setAttr -av ".pt[77].px";
+	setAttr -av ".pt[77].py";
+	setAttr -av ".pt[77].pz";
+	setAttr -av ".pt[78].px";
+	setAttr -av ".pt[78].py";
+	setAttr -av ".pt[78].pz";
+	setAttr -av ".pt[79].px";
+	setAttr -av ".pt[79].py";
+	setAttr -av ".pt[79].pz";
+	setAttr -av ".pt[80].px";
+	setAttr -av ".pt[80].py";
+	setAttr -av ".pt[80].pz";
+	setAttr -av ".pt[81].px";
+	setAttr -av ".pt[81].py";
+	setAttr -av ".pt[81].pz";
+	setAttr -av ".pt[82].px";
+	setAttr -av ".pt[82].py";
+	setAttr -av ".pt[82].pz";
+	setAttr -av ".pt[83].px";
+	setAttr -av ".pt[83].py";
+	setAttr -av ".pt[83].pz";
+	setAttr -av ".pt[84].px";
+	setAttr -av ".pt[84].py";
+	setAttr -av ".pt[84].pz";
+	setAttr -av ".pt[85].px";
+	setAttr -av ".pt[85].py";
+	setAttr -av ".pt[85].pz";
+	setAttr -av ".pt[86].px";
+	setAttr -av ".pt[86].py";
+	setAttr -av ".pt[86].pz";
+	setAttr -av ".pt[87].px";
+	setAttr -av ".pt[87].py";
+	setAttr -av ".pt[87].pz";
+createNode transform -n "group1";
+	rename -uid "BE7B6DA5-4C0F-0322-41C9-F58E033A1E3A";
+	setAttr ".rp" -type "double3" 0.73482320971007731 2.3284550378687223 -6.6957500128400085 ;
+	setAttr ".sp" -type "double3" 0.73482320971007731 2.3284550378687223 -6.6957500128400085 ;
+createNode transform -n "pasted__group" -p "group1";
+	rename -uid "DBED32CB-408F-243F-D001-399511ECA06E";
+	setAttr ".t" -type "double3" 7.8537838937040698 -0.11173794275244964 -6.9126762852087786 ;
+	setAttr ".rp" -type "double3" -7.1189606839939925 1.1117379427524496 0.1424451873383511 ;
+	setAttr ".sp" -type "double3" -7.1189606839939925 1.1117379427524496 0.1424451873383511 ;
+createNode transform -n "pasted__pasted__pCube2" -p "pasted__group";
+	rename -uid "C2620564-444F-0BDC-24D0-1EA060DF050F";
+	setAttr ".t" -type "double3" -6.6724327345315562 1.440192980621172 -2.0051546303461181 ;
+	setAttr -av ".ty";
+	setAttr -av ".tx";
+	setAttr -av ".tz";
+	setAttr ".r" -type "double3" 0 110.93806981828629 0 ;
+	setAttr -av ".ry";
+	setAttr ".s" -type "double3" 1.8430803426531974 0.27748860535595887 2.0200295854246195 ;
+	setAttr -av ".sx";
+	setAttr -av ".sy";
+	setAttr -av ".sz";
+createNode mesh -n "pasted__pasted__pCubeShape2" -p "pasted__pasted__pCube2";
+	rename -uid "D40692BB-4538-B44C-8A36-7AA6EA9BAD6B";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 88 ".pt[0:87]" -type "float3"  0 0 0.081599295 0 0 0.081599295 
+		0 0 0.082368016 0 0 0.082368016 0 0 0.020183146 0 0 0.020183146 0 0 0.021408319 0 
+		0 0.02003029 0 0 0.021439463 0 0 0.082314253 0 0 0.020183146 0 0 0.082368016 0 0 
+		0.021438926 0 0 0.082314849 0 0 0.082368016 0 0 0.020183146 0 0 0.075832605 0 0 0.075832605 
+		0 0 0.076601386 0 0 0.076601386 0 0 0 0 0 0 0 0 0 0 0 -0.0013257265 0 0 0.021237493 
+		0 0 0.081367552 0 0 0.020014107 0 0 0.081524193 0 0 0.021236658 0 0 0.081367552 0 
+		0 0.081524193 0 0 0.020014107 0 0 0.080721915 0 0 0.081484079 0 0 0.074955106 0 0 
+		0.075717926 0 0 0.020006448 0 0 0.021196634 0 0 0 0 0 -0.0013124347 0 0 -0.00049346685 
+		0 0 -0.001850009 0 0 -0.00048935413 0 0 -0.0018327832 0 0 0.075593233 0 0 0.076412022 
+		0 0 0.074644864 0 0 0.075569868 0 0 0.075593233 0 0 0.076412022 0 0 0.075569868 0 
+		0 0.074644864 0 0 -0.00049346685 0 0 -0.0018501282 0 0 -0.0018327832 0 0 -0.00048935413 
+		0 0 0.013677925 0 0 -0.00084972382 0 0 0.013519645 0 0 -0.0008379817 0 0 0.013696879 
+		0 0 0.013546199 0 0 -0.0011843443 0 0 -0.0011718869 0 0 0.046975553 0 0 0.046309471 
+		0 0 0.040071428 0 0 0.040716767 0 0 0.046975434 0 0 0.04630965 0 0 0.040716767 0 
+		0 0.040071428 0 0 0.013697237 0 0 0.013545513 0 0 -0.0011705756 0 0 -0.0011842251 
+		0 0 0.020183146 0 0 0.020183146 0 0 0 0 0 0 0 0 0.020183146 0 0 0.020014107 0 0 -0.00048935413 
+		0 0 -0.00049346685 0 0 0.020183146 0 0 0.020014107 0 0 -0.00049346685 0 0 -0.00048935413;
+	setAttr -s 88 ".pt";
+	setAttr -av ".pt[0].px";
+	setAttr -av ".pt[0].py";
+	setAttr -av ".pt[0].pz";
+	setAttr -av ".pt[1].px";
+	setAttr -av ".pt[1].py";
+	setAttr -av ".pt[1].pz";
+	setAttr -av ".pt[2].px";
+	setAttr -av ".pt[2].py";
+	setAttr -av ".pt[2].pz";
+	setAttr -av ".pt[3].px";
+	setAttr -av ".pt[3].py";
+	setAttr -av ".pt[3].pz";
+	setAttr -av ".pt[4].px";
+	setAttr -av ".pt[4].py";
+	setAttr -av ".pt[4].pz";
+	setAttr -av ".pt[5].px";
+	setAttr -av ".pt[5].py";
+	setAttr -av ".pt[5].pz";
+	setAttr -av ".pt[6].px";
+	setAttr -av ".pt[6].py";
+	setAttr -av ".pt[6].pz";
+	setAttr -av ".pt[7].px";
+	setAttr -av ".pt[7].py";
+	setAttr -av ".pt[7].pz";
+	setAttr -av ".pt[8].px";
+	setAttr -av ".pt[8].py";
+	setAttr -av ".pt[8].pz";
+	setAttr -av ".pt[9].px";
+	setAttr -av ".pt[9].py";
+	setAttr -av ".pt[9].pz";
+	setAttr -av ".pt[10].px";
+	setAttr -av ".pt[10].py";
+	setAttr -av ".pt[10].pz";
+	setAttr -av ".pt[11].px";
+	setAttr -av ".pt[11].py";
+	setAttr -av ".pt[11].pz";
+	setAttr -av ".pt[12].px";
+	setAttr -av ".pt[12].py";
+	setAttr -av ".pt[12].pz";
+	setAttr -av ".pt[13].px";
+	setAttr -av ".pt[13].py";
+	setAttr -av ".pt[13].pz";
+	setAttr -av ".pt[14].px";
+	setAttr -av ".pt[14].py";
+	setAttr -av ".pt[14].pz";
+	setAttr -av ".pt[15].px";
+	setAttr -av ".pt[15].py";
+	setAttr -av ".pt[15].pz";
+	setAttr -av ".pt[16].px";
+	setAttr -av ".pt[16].py";
+	setAttr -av ".pt[16].pz";
+	setAttr -av ".pt[17].px";
+	setAttr -av ".pt[17].py";
+	setAttr -av ".pt[17].pz";
+	setAttr -av ".pt[18].px";
+	setAttr -av ".pt[18].py";
+	setAttr -av ".pt[18].pz";
+	setAttr -av ".pt[19].px";
+	setAttr -av ".pt[19].py";
+	setAttr -av ".pt[19].pz";
+	setAttr -av ".pt[20].px";
+	setAttr -av ".pt[20].py";
+	setAttr -av ".pt[20].pz";
+	setAttr -av ".pt[21].px";
+	setAttr -av ".pt[21].py";
+	setAttr -av ".pt[21].pz";
+	setAttr -av ".pt[22].px";
+	setAttr -av ".pt[22].py";
+	setAttr -av ".pt[22].pz";
+	setAttr -av ".pt[23].px";
+	setAttr -av ".pt[23].py";
+	setAttr -av ".pt[23].pz";
+	setAttr -av ".pt[24].px";
+	setAttr -av ".pt[24].py";
+	setAttr -av ".pt[24].pz";
+	setAttr -av ".pt[25].px";
+	setAttr -av ".pt[25].py";
+	setAttr -av ".pt[25].pz";
+	setAttr -av ".pt[26].px";
+	setAttr -av ".pt[26].py";
+	setAttr -av ".pt[26].pz";
+	setAttr -av ".pt[27].px";
+	setAttr -av ".pt[27].py";
+	setAttr -av ".pt[27].pz";
+	setAttr -av ".pt[28].px";
+	setAttr -av ".pt[28].py";
+	setAttr -av ".pt[28].pz";
+	setAttr -av ".pt[29].px";
+	setAttr -av ".pt[29].py";
+	setAttr -av ".pt[29].pz";
+	setAttr -av ".pt[30].px";
+	setAttr -av ".pt[30].py";
+	setAttr -av ".pt[30].pz";
+	setAttr -av ".pt[31].px";
+	setAttr -av ".pt[31].py";
+	setAttr -av ".pt[31].pz";
+	setAttr -av ".pt[32].px";
+	setAttr -av ".pt[32].py";
+	setAttr -av ".pt[32].pz";
+	setAttr -av ".pt[33].px";
+	setAttr -av ".pt[33].py";
+	setAttr -av ".pt[33].pz";
+	setAttr -av ".pt[34].px";
+	setAttr -av ".pt[34].py";
+	setAttr -av ".pt[34].pz";
+	setAttr -av ".pt[35].px";
+	setAttr -av ".pt[35].py";
+	setAttr -av ".pt[35].pz";
+	setAttr -av ".pt[36].px";
+	setAttr -av ".pt[36].py";
+	setAttr -av ".pt[36].pz";
+	setAttr -av ".pt[37].px";
+	setAttr -av ".pt[37].py";
+	setAttr -av ".pt[37].pz";
+	setAttr -av ".pt[38].px";
+	setAttr -av ".pt[38].py";
+	setAttr -av ".pt[38].pz";
+	setAttr -av ".pt[39].px";
+	setAttr -av ".pt[39].py";
+	setAttr -av ".pt[39].pz";
+	setAttr -av ".pt[40].px";
+	setAttr -av ".pt[40].py";
+	setAttr -av ".pt[40].pz";
+	setAttr -av ".pt[41].px";
+	setAttr -av ".pt[41].py";
+	setAttr -av ".pt[41].pz";
+	setAttr -av ".pt[42].px";
+	setAttr -av ".pt[42].py";
+	setAttr -av ".pt[42].pz";
+	setAttr -av ".pt[43].px";
+	setAttr -av ".pt[43].py";
+	setAttr -av ".pt[43].pz";
+	setAttr -av ".pt[44].px";
+	setAttr -av ".pt[44].py";
+	setAttr -av ".pt[44].pz";
+	setAttr -av ".pt[45].px";
+	setAttr -av ".pt[45].py";
+	setAttr -av ".pt[45].pz";
+	setAttr -av ".pt[46].px";
+	setAttr -av ".pt[46].py";
+	setAttr -av ".pt[46].pz";
+	setAttr -av ".pt[47].px";
+	setAttr -av ".pt[47].py";
+	setAttr -av ".pt[47].pz";
+	setAttr -av ".pt[48].px";
+	setAttr -av ".pt[48].py";
+	setAttr -av ".pt[48].pz";
+	setAttr -av ".pt[49].px";
+	setAttr -av ".pt[49].py";
+	setAttr -av ".pt[49].pz";
+	setAttr -av ".pt[50].px";
+	setAttr -av ".pt[50].py";
+	setAttr -av ".pt[50].pz";
+	setAttr -av ".pt[51].px";
+	setAttr -av ".pt[51].py";
+	setAttr -av ".pt[51].pz";
+	setAttr -av ".pt[52].px";
+	setAttr -av ".pt[52].py";
+	setAttr -av ".pt[52].pz";
+	setAttr -av ".pt[53].px";
+	setAttr -av ".pt[53].py";
+	setAttr -av ".pt[53].pz";
+	setAttr -av ".pt[54].px";
+	setAttr -av ".pt[54].py";
+	setAttr -av ".pt[54].pz";
+	setAttr -av ".pt[55].px";
+	setAttr -av ".pt[55].py";
+	setAttr -av ".pt[55].pz";
+	setAttr -av ".pt[56].px";
+	setAttr -av ".pt[56].py";
+	setAttr -av ".pt[56].pz";
+	setAttr -av ".pt[57].px";
+	setAttr -av ".pt[57].py";
+	setAttr -av ".pt[57].pz";
+	setAttr -av ".pt[58].px";
+	setAttr -av ".pt[58].py";
+	setAttr -av ".pt[58].pz";
+	setAttr -av ".pt[59].px";
+	setAttr -av ".pt[59].py";
+	setAttr -av ".pt[59].pz";
+	setAttr -av ".pt[60].px";
+	setAttr -av ".pt[60].py";
+	setAttr -av ".pt[60].pz";
+	setAttr -av ".pt[61].px";
+	setAttr -av ".pt[61].py";
+	setAttr -av ".pt[61].pz";
+	setAttr -av ".pt[62].px";
+	setAttr -av ".pt[62].py";
+	setAttr -av ".pt[62].pz";
+	setAttr -av ".pt[63].px";
+	setAttr -av ".pt[63].py";
+	setAttr -av ".pt[63].pz";
+	setAttr -av ".pt[64].px";
+	setAttr -av ".pt[64].py";
+	setAttr -av ".pt[64].pz";
+	setAttr -av ".pt[65].px";
+	setAttr -av ".pt[65].py";
+	setAttr -av ".pt[65].pz";
+	setAttr -av ".pt[66].px";
+	setAttr -av ".pt[66].py";
+	setAttr -av ".pt[66].pz";
+	setAttr -av ".pt[67].px";
+	setAttr -av ".pt[67].py";
+	setAttr -av ".pt[67].pz";
+	setAttr -av ".pt[68].px";
+	setAttr -av ".pt[68].py";
+	setAttr -av ".pt[68].pz";
+	setAttr -av ".pt[69].px";
+	setAttr -av ".pt[69].py";
+	setAttr -av ".pt[69].pz";
+	setAttr -av ".pt[70].px";
+	setAttr -av ".pt[70].py";
+	setAttr -av ".pt[70].pz";
+	setAttr -av ".pt[71].px";
+	setAttr -av ".pt[71].py";
+	setAttr -av ".pt[71].pz";
+	setAttr -av ".pt[72].px";
+	setAttr -av ".pt[72].py";
+	setAttr -av ".pt[72].pz";
+	setAttr -av ".pt[73].px";
+	setAttr -av ".pt[73].py";
+	setAttr -av ".pt[73].pz";
+	setAttr -av ".pt[74].px";
+	setAttr -av ".pt[74].py";
+	setAttr -av ".pt[74].pz";
+	setAttr -av ".pt[75].px";
+	setAttr -av ".pt[75].py";
+	setAttr -av ".pt[75].pz";
+	setAttr -av ".pt[76].px";
+	setAttr -av ".pt[76].py";
+	setAttr -av ".pt[76].pz";
+	setAttr -av ".pt[77].px";
+	setAttr -av ".pt[77].py";
+	setAttr -av ".pt[77].pz";
+	setAttr -av ".pt[78].px";
+	setAttr -av ".pt[78].py";
+	setAttr -av ".pt[78].pz";
+	setAttr -av ".pt[79].px";
+	setAttr -av ".pt[79].py";
+	setAttr -av ".pt[79].pz";
+	setAttr -av ".pt[80].px";
+	setAttr -av ".pt[80].py";
+	setAttr -av ".pt[80].pz";
+	setAttr -av ".pt[81].px";
+	setAttr -av ".pt[81].py";
+	setAttr -av ".pt[81].pz";
+	setAttr -av ".pt[82].px";
+	setAttr -av ".pt[82].py";
+	setAttr -av ".pt[82].pz";
+	setAttr -av ".pt[83].px";
+	setAttr -av ".pt[83].py";
+	setAttr -av ".pt[83].pz";
+	setAttr -av ".pt[84].px";
+	setAttr -av ".pt[84].py";
+	setAttr -av ".pt[84].pz";
+	setAttr -av ".pt[85].px";
+	setAttr -av ".pt[85].py";
+	setAttr -av ".pt[85].pz";
+	setAttr -av ".pt[86].px";
+	setAttr -av ".pt[86].py";
+	setAttr -av ".pt[86].pz";
+	setAttr -av ".pt[87].px";
+	setAttr -av ".pt[87].py";
+	setAttr -av ".pt[87].pz";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "53BE08CB-4C72-086E-776A-66BDB72A799B";
+	rename -uid "5302C662-4FC7-3C81-D585-9BA0F40ECC65";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "F3C20475-4352-29EE-65F2-7CB7C581B4CF";
+	rename -uid "1DBB5F27-43C0-79F8-C83D-31A5EAB8F95A";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "40145887-48D2-3493-CFEE-3FB9B32A42C7";
+	rename -uid "25D605C6-4D18-7285-F06B-1AB00D7B3C6B";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D6147863-47FF-17CC-D2AD-DE948F9301C3";
+	rename -uid "B77EBEA0-42F7-8F0E-EA32-59A3B5F4095D";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 2 ".dli";
@@ -295,7 +772,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "FC6FA602-4A77-C9C8-8465-9DA29FD5A693";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "97D496C4-4A28-6FF2-C3F9-1B8B9FFB5C21";
+	rename -uid "D2057FD3-4792-6A85-CD96-BA945DBE1149";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "7D1A2502-4F69-8803-320C-2EA68996F1A2";
 	setAttr ".g" yes;
@@ -305,15 +782,15 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 379\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
 		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n"
-		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 378\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
+		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
 		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
 		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
-		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 378\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
-		+ "        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
+		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
+		+ "            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
 		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1117\n            -height 804\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n"
@@ -444,107 +921,6 @@ createNode brush -n "art3dPaintLastPaintBrush";
 	setAttr ".env[2].envc" -type "float3" 0 0.1 0.44999999 ;
 	setAttr ".env[2].envi" 2;
 	setAttr ".rro[0]"  0 1 1;
-createNode polyCube -n "polyCube2";
-	rename -uid "2529714A-4E4E-2C6F-EF38-BE821AE1F024";
-	setAttr ".cuv" 4;
-createNode polyExtrudeFace -n "polyExtrudeFace6";
-	rename -uid "EE9B1089-49B1-78AC-779A-ADAC82ACC1DC";
-	setAttr ".ics" -type "componentList" 1 "f[4:5]";
-	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 -7 6 4 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" -7 6 4 ;
-	setAttr ".rs" 56871;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -7.5 5.5000000894069672 3.4999997615814209 ;
-	setAttr ".cbx" -type "double3" -6.5 6.5 4.5000002384185791 ;
-createNode animCurveTL -n "pCube2_translateX";
-	rename -uid "1C5182A7-4550-2065-CC09-5E92556B2C31";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 -7.1152154132302439;
-createNode animCurveTL -n "pCube2_translateY";
-	rename -uid "FCD2F19F-4F40-B5F3-14AA-98821AFC3861";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 2.4587290201646095;
-createNode animCurveTL -n "pCube2_translateZ";
-	rename -uid "F8D7A55D-45F9-C2CE-4888-43BE2EB1571C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0.14244524753992405;
-createNode animCurveTU -n "pCube2_visibility";
-	rename -uid "D7A0A4F3-4E6E-195F-E7B1-4C8B13718F7E";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "pCube2_rotateX";
-	rename -uid "37DFEC62-46E2-6E19-D443-2C91E45982FC";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
-createNode animCurveTA -n "pCube2_rotateY";
-	rename -uid "7568695F-43E1-C2F1-94B6-32B311D56A17";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
-createNode animCurveTA -n "pCube2_rotateZ";
-	rename -uid "C2694087-4FC6-B378-2B0A-9FBD3A59EFAF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
-createNode animCurveTU -n "pCube2_scaleX";
-	rename -uid "6A460B94-47E8-5BF5-08BA-98A9B2A0DA60";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 2.2482118343263009;
-createNode animCurveTU -n "pCube2_scaleY";
-	rename -uid "60EA33DE-4690-261D-E74A-3599CEE399CC";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0.37671907922670328;
-createNode animCurveTU -n "pCube2_scaleZ";
-	rename -uid "BFAC2584-4150-73E9-4C2A-D3B3222285C7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 2.2482118343263009;
-createNode polyExtrudeFace -n "polyExtrudeFace7";
-	rename -uid "59B5B076-43D0-EBCD-8B54-219FD3555E11";
-	setAttr ".ics" -type "componentList" 3 "f[0]" "f[2]" "f[4:5]";
-	setAttr ".ix" -type "matrix" 2.2482118343263009 0 0 0 0 0.37671907922670328 0 0 0 0 2.2482118343263009 0
-		 -7.1152154132302439 2.4587290201646095 0.14244524753992405 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" -7.1152153 2.458729 0.14244525 ;
-	setAttr ".rs" 64631;
-	setAttr ".lt" -type "double3" 0 -4.4408920985006262e-16 0.35469675310012372 ;
-	setAttr ".kft" no;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -8.2393213303933948 2.270369480551258 -0.98166120563869752 ;
-	setAttr ".cbx" -type "double3" -5.991109496067093 2.647088559777961 1.2665517007185456 ;
-createNode polyExtrudeFace -n "polyExtrudeFace8";
-	rename -uid "41A4B83C-436E-0570-5835-B096D642A8F5";
-	setAttr ".ics" -type "componentList" 6 "f[17]" "f[21]" "f[23]" "f[25]" "f[27]" "f[29]";
-	setAttr ".ix" -type "matrix" 2.2482118343263009 0 0 0 0 0.37671907922670328 0 0 0 0 2.2482118343263009 0
-		 -7.1152154132302439 2.4587290201646095 0.14244524753992405 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" -7.1152148 2.458729 0.14244525 ;
-	setAttr ".rs" 39916;
-	setAttr ".lt" -type "double3" 2.2204460492503131e-16 -4.4408920985006262e-16 0.36328376479145952 ;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -8.5940172400111141 2.270369480551258 -1.3363573832641527 ;
-	setAttr ".cbx" -type "double3" -5.6364125144184314 2.647088559777961 1.6212478783440007 ;
-createNode polyExtrudeFace -n "polyExtrudeFace9";
-	rename -uid "A32EE373-45AD-F686-6BD1-128CAC1ACAEE";
-	setAttr ".ics" -type "componentList" 5 "f[37]" "f[41]" "f[43]" "f[49]" "f[51]";
-	setAttr ".ix" -type "matrix" 2.2482118343263009 0 0 0 0 0.37671907922670328 0 0 0 0 2.2482118343263009 0
-		 -7.1152154132302439 2.4587290201646095 0.14244524753992405 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" -7.1195083 2.2703695 0.14244525 ;
-	setAttr ".rs" 63104;
-	setAttr ".lt" -type "double3" 5.3290705182007514e-15 0 2.2641377900130051 ;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -8.6026042078574854 2.270369480551258 -1.3449440831027886 ;
-	setAttr ".cbx" -type "double3" -5.6364125144184314 2.2703695142325682 1.6298345781826367 ;
 createNode animCurveTU -n "pasted__pCube2_scaleX";
 	rename -uid "991FB468-45CA-922E-C73E-E88D933E1470";
 	setAttr ".tan" 18;
@@ -677,6 +1053,2916 @@ createNode polyExtrudeFace -n "polyExtrudeFace10";
 	setAttr ".c[0]"  0 1 1;
 	setAttr ".cbn" -type "double3" -0.44109898432002859 3.1853365892745984 -0.36664063054561413 ;
 	setAttr ".cbx" -type "double3" 0.44109882657077926 3.8276533567956608 0.5602423778879918 ;
+createNode polyExtrudeFace -n "polyExtrudeFace11";
+	rename -uid "BDFE3F97-43AA-029D-89C8-01B9332E0CCF";
+	setAttr ".ics" -type "componentList" 3 "f[18]" "f[39]" "f[53]";
+	setAttr ".ix" -type "matrix" 1.8430803426531974 0 0 0 0 0.27748860535595887 0 0 0 0 2.0200295854246195 0
+		 0.73856848047382595 1.8882620572475504 -6.7702310376688546 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" 0.7385689 2.0270064 -7.9434519 ;
+	setAttr ".rs" 47532;
+	setAttr ".lt" -type "double3" 0 2.6645352591003757e-15 2.6569098561987388 ;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -0.47375081079802994 2.0270063599255299 -8.1066577956231605 ;
+	setAttr ".cbx" -type "double3" 1.9508886505948748 2.0270063599255299 -7.7802457099780185 ;
+createNode polyTweak -n "polyTweak1";
+	rename -uid "A57FF0EB-4CB5-EC1E-1AAC-24ACC24E1EA2";
+	setAttr ".uopa" yes;
+	setAttr -s 43 ".tk";
+	setAttr ".tk[0]" -type "float3" 1.7881393e-07 8.9406967e-08 2.3841858e-07 ;
+	setAttr ".tk[1]" -type "float3" -1.7881393e-07 8.9406967e-08 2.3841858e-07 ;
+	setAttr ".tk[6]" -type "float3" 0.010541737 0.39200652 0.010289103 ;
+	setAttr ".tk[7]" -type "float3" -1.7881393e-07 8.9406967e-08 -2.3841858e-07 ;
+	setAttr ".tk[8]" -type "float3" -0.010292292 0.39200658 0.010541737 ;
+	setAttr ".tk[9]" -type "float3" -0.010292292 0.39200658 -0.010541707 ;
+	setAttr ".tk[12]" -type "float3" 0.010292351 0.39200658 0.010538548 ;
+	setAttr ".tk[13]" -type "float3" 0.010292351 0.39200658 -0.010538518 ;
+	setAttr ".tk[23]" -type "float3" 0.010541737 0.39200652 -0.010288596 ;
+	setAttr ".tk[24]" -type "float3" 0.010292828 0.39200658 0.010541737 ;
+	setAttr ".tk[25]" -type "float3" 0.010292828 0.39200658 -0.010541707 ;
+	setAttr ".tk[28]" -type "float3" -0.010288656 0.39200658 0.010538548 ;
+	setAttr ".tk[29]" -type "float3" -0.010288656 0.39200658 -0.010538518 ;
+	setAttr ".tk[37]" -type "float3" -0.010537982 0.39200652 0.010289103 ;
+	setAttr ".tk[39]" -type "float3" -0.010537982 0.39200652 -0.010288596 ;
+	setAttr ".tk[41]" -type "float3" -0.010292292 0.39200658 -0.010542274 ;
+	setAttr ".tk[43]" -type "float3" 0.010292828 0.39200658 -0.010542274 ;
+	setAttr ".tk[44]" -type "float3" -0.010292292 0.39200658 0.010542214 ;
+	setAttr ".tk[46]" -type "float3" 0.010292828 0.39200658 0.010542214 ;
+	setAttr ".tk[48]" -type "float3" 0.010292351 0.39200658 0.010542214 ;
+	setAttr ".tk[51]" -type "float3" -0.010288656 0.39200658 0.010542214 ;
+	setAttr ".tk[53]" -type "float3" 0.010292351 0.39200658 -0.010537982 ;
+	setAttr ".tk[54]" -type "float3" -0.010288656 0.39200658 -0.010537982 ;
+	setAttr ".tk[56]" -type "float3" 0.010541737 -0.39200306 0.010289103 ;
+	setAttr ".tk[57]" -type "float3" 0.010541737 -0.39200306 -0.010288596 ;
+	setAttr ".tk[58]" -type "float3" -0.010537982 -0.39200306 0.010289103 ;
+	setAttr ".tk[59]" -type "float3" -0.010537982 -0.39200306 -0.010288596 ;
+	setAttr ".tk[60]" -type "float3" -0.010292292 -0.39200306 0.010541737 ;
+	setAttr ".tk[61]" -type "float3" 0.010292828 -0.39200306 0.010541737 ;
+	setAttr ".tk[62]" -type "float3" -0.010292292 -0.39200306 -0.010542274 ;
+	setAttr ".tk[63]" -type "float3" 0.010292828 -0.39200306 -0.010542274 ;
+	setAttr ".tk[64]" -type "float3" -0.010292292 -0.39200306 -0.010541707 ;
+	setAttr ".tk[65]" -type "float3" 0.010292828 -0.39200306 -0.010541707 ;
+	setAttr ".tk[66]" -type "float3" 0.010292828 -0.39200306 0.010542214 ;
+	setAttr ".tk[67]" -type "float3" -0.010292292 -0.39200306 0.010542214 ;
+	setAttr ".tk[68]" -type "float3" 0.010292351 -0.39200306 -0.010538518 ;
+	setAttr ".tk[69]" -type "float3" -0.010288656 -0.39200306 -0.010538518 ;
+	setAttr ".tk[70]" -type "float3" 0.010292351 -0.39200306 0.010542214 ;
+	setAttr ".tk[71]" -type "float3" -0.010288656 -0.39200306 0.010542214 ;
+	setAttr ".tk[72]" -type "float3" 0.010292351 -0.39200306 0.010538548 ;
+	setAttr ".tk[73]" -type "float3" -0.010288656 -0.39200306 0.010538548 ;
+	setAttr ".tk[74]" -type "float3" -0.010288656 -0.39200306 -0.010537982 ;
+	setAttr ".tk[75]" -type "float3" 0.010292351 -0.39200306 -0.010537982 ;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_0__pntx";
+	rename -uid "F8EBC585-41D9-E0A4-1E2D-169756D1D645";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_0__pnty";
+	rename -uid "963A3C7E-47F5-85A5-AFDA-189720D17D81";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_0__pntz";
+	rename -uid "194C95F2-4FD4-1D9F-2106-25A794FB9C43";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_1__pntx";
+	rename -uid "F0638EB0-4E88-66DB-3A8C-DEAE41DEAF92";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_1__pnty";
+	rename -uid "40159510-464A-0B17-EA4F-EDBF33DA40DD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_1__pntz";
+	rename -uid "F1933F9A-40B8-F73D-4224-C69BAA1E187C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_2__pntx";
+	rename -uid "F7A5A113-4DFA-9BA6-9635-29B3C8120CF5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_2__pnty";
+	rename -uid "932DA338-41CA-5CC4-467B-56B89716AF32";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_2__pntz";
+	rename -uid "1279B108-41C5-C331-F8B9-3CB87DEC418F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_3__pntx";
+	rename -uid "1F761BDE-4454-23FE-F02F-0A81BA423343";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_3__pnty";
+	rename -uid "A1B0FE77-49D5-3A20-70C1-7095516CB84F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_3__pntz";
+	rename -uid "D6C384C0-4820-96CA-3823-25BF8B93C2F3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_4__pntx";
+	rename -uid "A9A0D16D-4AEF-B983-241D-C59FD1CC8914";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_4__pnty";
+	rename -uid "D66EFB53-4D2D-93DD-AA7F-C2BB9F1988DF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_4__pntz";
+	rename -uid "6C1FE09A-4694-9B3A-63CC-38ADA54AABD4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_5__pntx";
+	rename -uid "8E018B14-4DD7-7767-E396-538DAEA07F7E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_5__pnty";
+	rename -uid "79429E32-42DF-0165-DBB7-12B3F1FD017E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_5__pntz";
+	rename -uid "BE33B008-4B70-A93D-9378-6B9E2F780AE0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_6__pntx";
+	rename -uid "8982EB28-4FF9-9EEC-CA59-8E94932662F5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_6__pnty";
+	rename -uid "E23C8891-43EB-779D-D4E2-4AB2B31F0D9A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_6__pntz";
+	rename -uid "2891B645-4F6C-B568-A795-4586F7954363";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_7__pntx";
+	rename -uid "C8FFF58C-462F-1F04-B24A-3FA482B956CF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_7__pnty";
+	rename -uid "841512B0-4E1F-4BF4-A394-EBB7976E65C8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_7__pntz";
+	rename -uid "D9CAB37E-4490-D8C3-2F2A-BA9085B6E7C3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_8__pntx";
+	rename -uid "00036151-4119-007F-3C84-9D9D0FCC9F82";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_8__pnty";
+	rename -uid "55CD9A62-4A1F-B593-6170-FC82C4845E7F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_8__pntz";
+	rename -uid "CD315C5A-4A98-6AF4-01DD-CF8F468310A1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_9__pntx";
+	rename -uid "C2A6C979-4344-EF13-3796-DE883EADE5DB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_9__pnty";
+	rename -uid "24CC09D2-4D68-6028-BFB4-29A331D959B8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_9__pntz";
+	rename -uid "683F5E67-4C07-7F49-CE5C-8B9F2EDCCD31";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_10__pntx";
+	rename -uid "5F05267D-4459-4674-8814-5CB89FC747ED";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_10__pnty";
+	rename -uid "3BDF6978-4C6C-F695-E1FA-38AAEF88D027";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_10__pntz";
+	rename -uid "DB2A356E-4BDB-5A08-10E5-9C93C36358FA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_11__pntx";
+	rename -uid "CA922765-4AF4-1830-8043-9C9284534901";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_11__pnty";
+	rename -uid "BB0D553C-48D4-8B07-F323-CE968DBDF11D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_11__pntz";
+	rename -uid "D39EA2FA-471B-FA61-2931-F9878955F5DE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_12__pntx";
+	rename -uid "F2B7B44E-491C-4CB9-DAAF-D39A99ECDF3D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_12__pnty";
+	rename -uid "5BC2FF19-437B-5B75-EF19-43ACF844E8F3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_12__pntz";
+	rename -uid "A1F5041F-4C5B-A690-AD77-BE9132F25F12";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_13__pntx";
+	rename -uid "85F51882-4604-B53D-B1A0-4EA877B1E6B5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_13__pnty";
+	rename -uid "4E98559D-4FF2-3D1F-004A-8EB466CCB0A9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_13__pntz";
+	rename -uid "73EA769E-4B1F-4C24-1A41-48AE209AC948";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_14__pntx";
+	rename -uid "205219AF-42BA-41E5-1421-68815998E2D8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_14__pnty";
+	rename -uid "A023BE7A-49BE-10E1-629C-96896FFDBB63";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_14__pntz";
+	rename -uid "806948BD-4573-8771-2EB5-069F46997F6A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_15__pntx";
+	rename -uid "FE77833A-4DE8-16DD-207F-838365049EC9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_15__pnty";
+	rename -uid "C3DD1439-48B1-EC74-CE95-A2B327A6279C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_15__pntz";
+	rename -uid "FB4F103F-484B-9C2D-6C6D-83B7D139F89C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_16__pntx";
+	rename -uid "164B7892-4816-65FA-3BBE-C39F8813AF61";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_16__pnty";
+	rename -uid "E00DD475-4CA0-AB49-ABF2-B7A2FFE70D68";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_16__pntz";
+	rename -uid "AC764A2D-4ACA-AEC2-761F-1D9E94146BB4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_17__pntx";
+	rename -uid "16196E54-4CAB-FEC6-CE51-50BFCADED40E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_17__pnty";
+	rename -uid "91DDC717-46A9-BB94-D775-7E8572D87EF7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_17__pntz";
+	rename -uid "1DC34AD9-49A3-5B70-E2B1-5687927A9BBB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_18__pntx";
+	rename -uid "CFE19E1E-4928-04A9-94C3-C1B87931D1CC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_18__pnty";
+	rename -uid "177AE496-4007-3E1D-DE24-7283D63AACA7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_18__pntz";
+	rename -uid "219876CD-458A-FA20-BC62-A68E5F449EDF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_19__pntx";
+	rename -uid "F78B6058-4AA8-0ED0-BC0E-73904BF82B3E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_19__pnty";
+	rename -uid "C7637743-4C7B-FD1C-133A-599EEC96E138";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_19__pntz";
+	rename -uid "5CE6F1E1-4985-F8DE-EA0A-BDA53B9A5218";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_20__pntx";
+	rename -uid "1F849980-462B-00F3-6902-73A88D5CB9B4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_20__pnty";
+	rename -uid "491FF3BE-41A6-371B-B24F-379021849AC6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_20__pntz";
+	rename -uid "14D2C883-440E-015A-4184-AEA6C48E42DD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_21__pntx";
+	rename -uid "33582A9F-45CA-3106-9DFD-5498796A148F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_21__pnty";
+	rename -uid "7874B4D9-4CD8-B3F5-0933-529E45149EE5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_21__pntz";
+	rename -uid "11CB7D16-4975-AB16-3418-62913C13378E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_22__pntx";
+	rename -uid "1931690E-474B-EFCA-D8AE-A9949ABEA31A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_22__pnty";
+	rename -uid "C0012E73-4E8B-EA03-2AF1-18A605BDDD31";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_22__pntz";
+	rename -uid "CB4D2525-46B1-4A56-4B94-1EA34ECED278";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_23__pntx";
+	rename -uid "941CB729-4D60-ECF4-C06F-01A8971A1967";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_23__pnty";
+	rename -uid "BA9CF4F1-4CF2-B67E-0412-A48FFA759EA3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_23__pntz";
+	rename -uid "7F4033EE-44D5-1D6D-A9BA-958D021F9AC1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_24__pntx";
+	rename -uid "8073E854-4859-DB6D-E4A0-E085A108D24A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_24__pnty";
+	rename -uid "AA3EA452-49C4-850A-A43F-2598642567B1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_24__pntz";
+	rename -uid "E3FEAE96-465E-7E64-EC8D-C4AF4555535C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_25__pntx";
+	rename -uid "BE9F5A6E-406D-A350-427D-6489E96496B4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_25__pnty";
+	rename -uid "0F80914B-46C4-3B84-B753-729B7351D120";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_25__pntz";
+	rename -uid "A6E8D243-4BE7-DB78-1C15-62A939753C13";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_26__pntx";
+	rename -uid "CFE72BC4-4440-4FBB-5FBC-3E85579E2709";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_26__pnty";
+	rename -uid "AFF9F840-459F-E77B-C3A9-76BF273921BD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_26__pntz";
+	rename -uid "69E3B003-4506-C967-F39F-A3B894E2FA00";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_27__pntx";
+	rename -uid "523B5789-4AC7-8207-F440-7F85C75D9FCC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_27__pnty";
+	rename -uid "7A50CE41-421C-07EE-15C3-DCA5CA95A592";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_27__pntz";
+	rename -uid "A8F106F1-4CFE-30C7-91A1-F187FBF80E4D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_28__pntx";
+	rename -uid "F9F3CAB4-4387-C822-B379-358C30A7DA49";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_28__pnty";
+	rename -uid "D3733C48-449B-D978-4AA2-E1AABEC91DC6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_28__pntz";
+	rename -uid "62F8726A-4A68-83A7-6132-C190B112837F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_29__pntx";
+	rename -uid "A6E3284F-41A4-44CC-BA37-07A5DEE15360";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_29__pnty";
+	rename -uid "77EB6A19-46B2-CA95-1A75-079E942D8FBF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_29__pntz";
+	rename -uid "82FB01D7-4003-517A-AB83-B5AB761C41F3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_30__pntx";
+	rename -uid "F8460F55-499B-4DA5-A3EC-9BAB5F348B2D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_30__pnty";
+	rename -uid "D6C2EDD7-4C59-A9AA-08E3-A89902032DA5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_30__pntz";
+	rename -uid "40E73C80-4B6F-EAB5-721A-62BEE88436DE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_31__pntx";
+	rename -uid "6144DA49-44A7-4D2A-93BD-1D93A2C30461";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_31__pnty";
+	rename -uid "AB08054F-4443-A0E1-A1B6-6580C2A20AEF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_31__pntz";
+	rename -uid "A591FD0E-41FD-F2E3-011B-8F8B00CE4C55";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_32__pntx";
+	rename -uid "BB5B6BEF-43EC-8F85-C365-5195B5D93CA9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_32__pnty";
+	rename -uid "5778C184-4064-E3D9-0551-CA848437ABA4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_32__pntz";
+	rename -uid "2092A9DC-4A48-9400-0193-FB841A5F7FB3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_33__pntx";
+	rename -uid "633B919B-4F8D-0F71-4F2D-20AFB33590B7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_33__pnty";
+	rename -uid "FAD01F95-4D8B-DA08-6C40-8793B9B101E9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_33__pntz";
+	rename -uid "D39E5951-4865-6621-3199-36B072BF5E09";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_34__pntx";
+	rename -uid "9067711B-4D0B-4CB8-7CC1-E6A52A51D077";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_34__pnty";
+	rename -uid "CF9C5955-485D-B234-5665-18BBE5DE6FF4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_34__pntz";
+	rename -uid "979E3291-4198-9F32-6C8E-139A396A2438";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_35__pntx";
+	rename -uid "B01967D7-4E61-D9FA-3AA1-3783164D1C87";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_35__pnty";
+	rename -uid "6694AE08-4135-255B-B9C4-27A6CFDBAF56";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_35__pntz";
+	rename -uid "CC6050DF-445D-5A10-9340-618A6ABAA1BA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_36__pntx";
+	rename -uid "E1CBE25B-4E4D-5924-9215-0593BC12907C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_36__pnty";
+	rename -uid "DA7BD552-4FCE-9E8B-8951-67BA51A1A338";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_36__pntz";
+	rename -uid "25C4E541-4EDF-A907-3BE8-D89B63D562B6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_37__pntx";
+	rename -uid "39A0D563-42BA-4082-FE12-5F9019B2B0E2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_37__pnty";
+	rename -uid "BEFFC0C0-4065-61D7-56AA-80B822E67CC8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_37__pntz";
+	rename -uid "56176380-4887-96C0-1217-8C8C9FF9133C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_38__pntx";
+	rename -uid "F7DCE62D-413F-4DAA-EA33-5EA2E1570A2B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_38__pnty";
+	rename -uid "5CD89640-4661-1F95-21D7-6197162619A8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_38__pntz";
+	rename -uid "05A630C7-4E9B-3A8A-5507-C28EB2AD5E53";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_39__pntx";
+	rename -uid "EDFE4D1B-450B-FF29-868F-CC9291DD5E3E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_39__pnty";
+	rename -uid "42D02848-424A-D808-643A-5491603256DF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_39__pntz";
+	rename -uid "0E896CDC-43B6-ABE5-7435-E1AD7FB3D17F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_40__pntx";
+	rename -uid "A29935AB-44B9-FBF8-0168-5D9ADDAF00D3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_40__pnty";
+	rename -uid "293B0D1D-4076-C20F-35F7-E9A04A49F94E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_40__pntz";
+	rename -uid "F70A3DA2-4F5F-ADC2-1B15-D3A75F22F6F9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_41__pntx";
+	rename -uid "AA60BE7D-42D3-22E9-F16A-AC8FB3E32FF5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_41__pnty";
+	rename -uid "18FBD6F3-42DF-53AF-70C7-86A091FA8171";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_41__pntz";
+	rename -uid "A1540AFE-4B99-05A6-6994-90A5EF4D780B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_42__pntx";
+	rename -uid "BFAD5574-4102-C348-B413-C4A79DD1A3C4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_42__pnty";
+	rename -uid "D7B08A9B-4FA5-BD18-FF9A-019486C532AE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_42__pntz";
+	rename -uid "655D0F03-461E-944E-591C-68BD7D2EC4E0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_43__pntx";
+	rename -uid "1DB68BB0-4E5E-7A55-C260-C199D3D54DF8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_43__pnty";
+	rename -uid "F50E01F5-4810-DCC3-9D42-3A9B64ECE9C5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_43__pntz";
+	rename -uid "3B8F6FC9-4B37-FC84-C3A5-E7A91A1F0C0F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_44__pntx";
+	rename -uid "0D04618D-4807-BF28-C3A5-38807C46D0B7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_44__pnty";
+	rename -uid "FBE11963-411A-489C-CA7D-FEA7A9BE6F5D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_44__pntz";
+	rename -uid "CB60746A-4552-DAE8-F06F-7C815DABA595";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_45__pntx";
+	rename -uid "4EE7F517-40A3-65C6-227F-9EBA8851FB48";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_45__pnty";
+	rename -uid "8E1D5D24-4F4F-B5DD-526F-929AC5FF7152";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_45__pntz";
+	rename -uid "329A8F2C-4EB5-D541-935C-BDB2ABE30E51";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_46__pntx";
+	rename -uid "FDD46FB0-470D-16E7-3554-379837AB458B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_46__pnty";
+	rename -uid "202AFA58-4C23-F462-3464-A6835DDF3705";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_46__pntz";
+	rename -uid "6CF78F16-4A8B-438F-8452-43AC30B75357";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_47__pntx";
+	rename -uid "E494ACCC-4E94-4E28-800F-8D9C439D16A0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_47__pnty";
+	rename -uid "B34001BB-4A87-E255-03BD-F8A38D220430";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_47__pntz";
+	rename -uid "60869E44-4C0A-F7E2-4429-57B205F0F054";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_48__pntx";
+	rename -uid "B8FC684A-4E6C-2965-FD1E-E2A4F1392100";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_48__pnty";
+	rename -uid "B402D17A-4EDE-1148-8C57-2F944D0DA4D7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_48__pntz";
+	rename -uid "BA3311A3-4290-238C-4D72-93A1E438D802";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_49__pntx";
+	rename -uid "D7A9F0A9-4B20-B272-3376-4D993061D7F6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_49__pnty";
+	rename -uid "DD1E00C8-4026-3654-792D-E28BB9AD33C0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_49__pntz";
+	rename -uid "EDCEB596-4C15-816B-CE89-6FA8DECAE1F6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_50__pntx";
+	rename -uid "436675DE-4360-A6E1-0FE0-3EB37BAC8DF8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_50__pnty";
+	rename -uid "36997A3D-4BEA-CF46-83F9-F38A3BA71423";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_50__pntz";
+	rename -uid "21B48BA6-4A31-2D50-8916-CFB0A82FA492";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_51__pntx";
+	rename -uid "60CE14ED-480F-1CA0-59E7-39AB0461518F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_51__pnty";
+	rename -uid "C7308B4E-4D33-048A-EB12-A6AE6DAF0EAB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_51__pntz";
+	rename -uid "17EA6C47-4DA4-BBD2-2AC6-3992875F8CBC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_52__pntx";
+	rename -uid "D7A92BBF-46EE-1AA0-834F-4486E32B11D5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_52__pnty";
+	rename -uid "E2F09FE8-4A31-22AB-88DF-F8BCDBA1F6EB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_52__pntz";
+	rename -uid "710E6FA0-43E9-4FA6-3204-8A804BA5876B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_53__pntx";
+	rename -uid "565D6607-4A44-7B8B-640E-12B6EC0D433E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_53__pnty";
+	rename -uid "C6C08D21-45D0-8BCD-7913-9A9ABB0F8699";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_53__pntz";
+	rename -uid "D6C92F8E-4C06-9C13-1008-A9B21F302ECA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_54__pntx";
+	rename -uid "EB559670-4123-E431-ECC7-EEBD8956C7F5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_54__pnty";
+	rename -uid "50E73B38-4D44-E4CE-6C5C-4396AF222A54";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_54__pntz";
+	rename -uid "3FB44E62-4379-0BEC-7AF2-6792583ED94A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_55__pntx";
+	rename -uid "2386231B-4F65-48AF-F57E-078785C3ED28";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_55__pnty";
+	rename -uid "2449E039-4EB4-ACB3-187D-78B9C9F364E8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_55__pntz";
+	rename -uid "E7DFBA7E-4A3D-FDCB-D7B7-9299416B6B08";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_56__pntx";
+	rename -uid "8FAF043B-4544-029A-209C-AC9174BBBE25";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_56__pnty";
+	rename -uid "DF89B4A0-4316-906E-0CAB-D7BC9D450CB7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_56__pntz";
+	rename -uid "4A171FF8-4EAD-2F5B-8A82-B1B35DEDD4A3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_57__pntx";
+	rename -uid "09AC8127-4ED9-CE66-5294-818E42C8B337";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_57__pnty";
+	rename -uid "D0A9F052-4AFD-34F7-F51A-F8BEAC077A85";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_57__pntz";
+	rename -uid "EAE73F21-4A42-6C7C-DC2C-AF9252231ECD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_58__pntx";
+	rename -uid "6720E00E-4219-91E0-97CA-91B7B2145E4D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_58__pnty";
+	rename -uid "68F150AD-4717-1874-9CF9-FF8079802833";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_58__pntz";
+	rename -uid "D436637F-4B06-AFE3-E5E2-DBA93D9D1CD5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_59__pntx";
+	rename -uid "4C220894-4868-7FFF-4B6B-B1A712D851DA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_59__pnty";
+	rename -uid "1FB85DCF-4C99-B679-8CBC-F09444536C4D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_59__pntz";
+	rename -uid "A6199C79-4022-EE02-AC10-5687C14831DA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_60__pntx";
+	rename -uid "8888201C-4664-6A15-11DA-4DBD5D459BA1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_60__pnty";
+	rename -uid "F311A25F-48E6-420E-3803-2D8B5ED7327B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_60__pntz";
+	rename -uid "4FBC9D51-460C-109A-1BF2-24A70D44C602";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_61__pntx";
+	rename -uid "D5CD3E02-48B8-A1B5-D181-D2A2B75FC42B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_61__pnty";
+	rename -uid "7E723A6C-4A5C-6F82-7EA0-1EB433CF058A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_61__pntz";
+	rename -uid "C5003970-4D4C-53DE-C636-58BF543DCAE7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_62__pntx";
+	rename -uid "B96D7B71-4E7B-7B7E-0325-3AB7D7D4603A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_62__pnty";
+	rename -uid "E24A3EED-4491-7F32-A53D-35A4E6804C35";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_62__pntz";
+	rename -uid "1B193694-4052-DADB-4D76-0197FD9BC0E1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_63__pntx";
+	rename -uid "0B4A5CAD-4AEF-91E4-B7B5-4E91F4D261A1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_63__pnty";
+	rename -uid "24FFB528-401C-BDB9-432B-869CF07802DF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_63__pntz";
+	rename -uid "E4B3556A-4F22-7C92-AB1A-8FAD65EA0874";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_64__pntx";
+	rename -uid "8BE25B3B-4D97-D109-F85B-05A6169B51BE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_64__pnty";
+	rename -uid "E41A38DF-4E9B-DC81-4899-71B8B08B27D2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_64__pntz";
+	rename -uid "F9BA75D0-44D6-97E1-B56F-1585CA33635A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_65__pntx";
+	rename -uid "804D50C9-47A7-2052-105F-4C9E990A17FD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_65__pnty";
+	rename -uid "59FF993C-4761-6798-222A-359A6C0265C4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_65__pntz";
+	rename -uid "F70DAE9A-4B9B-B99F-16F1-8C8D970BD8C9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_66__pntx";
+	rename -uid "C7BAFBB4-4AB0-0A48-A989-F9A2EFC5E03D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_66__pnty";
+	rename -uid "8AE55195-4B75-D448-C59F-26B502ED9DF0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_66__pntz";
+	rename -uid "C18815E3-4EE5-7065-2152-30A8CC1B875F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_67__pntx";
+	rename -uid "D1A624CD-4B72-D436-D484-FBB83509B275";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_67__pnty";
+	rename -uid "7B7C25AA-4EFB-9933-DF48-2080DA92ED5C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_67__pntz";
+	rename -uid "8197AAAC-4AAD-6061-8E44-13940B91E6D8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_68__pntx";
+	rename -uid "78506796-438A-3490-686E-1696F80DF1E2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_68__pnty";
+	rename -uid "4FB52039-433E-96CA-944A-C1A9286DB381";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_68__pntz";
+	rename -uid "3FF9B07B-49A4-E1E6-6E3E-2A9B32F6F140";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_69__pntx";
+	rename -uid "414E50F9-4C26-B260-96AB-4E99935A812F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_69__pnty";
+	rename -uid "7436B197-425B-2787-678A-0A9616050F05";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_69__pntz";
+	rename -uid "81664E8F-4F12-A9D7-AEA8-089FC5801CC3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_70__pntx";
+	rename -uid "2B1A01C2-4086-4E06-B8FD-6C9BB7985394";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_70__pnty";
+	rename -uid "0CFEA5A9-420F-3AC6-5C40-5FB91763B641";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_70__pntz";
+	rename -uid "78B1959C-453F-80D5-15BC-A38A08A94F05";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_71__pntx";
+	rename -uid "522566E0-42E4-5F7B-6C72-36B8E55CBCB4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_71__pnty";
+	rename -uid "00CBAFAD-4FA0-F108-EA67-84AD43EF67A1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_71__pntz";
+	rename -uid "83CBB1F0-45DE-291F-99E0-5B8E370EABA6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_72__pntx";
+	rename -uid "794852D7-485C-F550-04B4-A3B8D1155B34";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_72__pnty";
+	rename -uid "00E0C580-4862-981F-168D-87AF3A8C3D9D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_72__pntz";
+	rename -uid "25ADD58F-4C78-87B7-E8B1-8292E87662F4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_73__pntx";
+	rename -uid "78797E8E-48F0-4393-13DA-2B9B6ABC98D6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_73__pnty";
+	rename -uid "73B1CE49-446C-D0CF-E948-37B7473FF436";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_73__pntz";
+	rename -uid "A7EE32D4-4BF5-3FFB-17A2-7AB269999EFC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_74__pntx";
+	rename -uid "234F60C2-4339-6CDC-5101-16907B9DB6DC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_74__pnty";
+	rename -uid "C7C79316-474D-14DD-F187-BCA74CBA6755";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_74__pntz";
+	rename -uid "53DE6754-4A6B-77DC-6362-6FB131AD3E40";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_75__pntx";
+	rename -uid "32E8C680-4173-5732-00E8-95B876CEF498";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_75__pnty";
+	rename -uid "622D4C76-439A-FA58-5351-469087EDB381";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_75__pntz";
+	rename -uid "4182CB98-4655-5092-688A-7E999EFCA1D8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_76__pntx";
+	rename -uid "1617EE18-40F8-A4DC-D19E-B69F7C29A849";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_76__pnty";
+	rename -uid "0ED52C29-434C-BDBF-B238-5EACBD1FF377";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_76__pntz";
+	rename -uid "07CA8944-4F44-54D9-C972-98802DC20A17";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_77__pntx";
+	rename -uid "0E45E9E7-4052-C1C6-BFF2-2DA1F90FD97C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_77__pnty";
+	rename -uid "19B9EECC-43E8-F3B0-DE05-A0BDF07EDCC2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_77__pntz";
+	rename -uid "F4C1EAE2-4CCC-2AA3-25EC-738CAD04E7ED";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_78__pntx";
+	rename -uid "FA4E54DE-4126-C4C7-2ADF-FBAA00DA7ACA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_78__pnty";
+	rename -uid "26C4E39C-4331-8A6A-4224-4A96AFD40E92";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_78__pntz";
+	rename -uid "9D95EA35-44FF-4555-CA4C-EB882FD8ACAA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_79__pntx";
+	rename -uid "0DDE70E5-46CE-4933-8BDD-F69920BD4071";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_79__pnty";
+	rename -uid "A6CC209E-40EF-0C69-AEFF-C9BFABE20D54";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_79__pntz";
+	rename -uid "43FF1A1C-4A42-1D9F-9B75-9EAC0D55EECB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_80__pntx";
+	rename -uid "2BA7F185-4509-9B39-CEEF-7CAC2EB9D218";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_80__pnty";
+	rename -uid "46A79D98-4FF8-3A3B-01DB-5B88DCC3933A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_80__pntz";
+	rename -uid "09FE4908-40EB-795C-27AE-BE938B5B3913";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_81__pntx";
+	rename -uid "0C6C2ABE-4442-6977-7346-EF8C9291DA0D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_81__pnty";
+	rename -uid "C0BE69EA-46FF-DB64-2A02-2EB2F7169CB8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_81__pntz";
+	rename -uid "6D82D236-42CB-278F-6FF7-BDB5029FDE25";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_82__pntx";
+	rename -uid "5D4FBE93-4393-5A35-2F00-EFA98655154A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_82__pnty";
+	rename -uid "46B9C431-42F8-A3EB-AF3D-C5A9F82CDB19";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_82__pntz";
+	rename -uid "32AA5C4D-40D8-7EFC-AFB3-10BC8F58F8A8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_83__pntx";
+	rename -uid "64438C6C-4590-EFE6-7E59-F190261F8CA6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_83__pnty";
+	rename -uid "EA654267-4C8B-5961-139D-1A9F9048E82D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_83__pntz";
+	rename -uid "31996F4B-47D1-974B-06C3-4CA902B5F9CD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_84__pntx";
+	rename -uid "000B9374-4C87-E123-5CC1-9580DCF380BD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_84__pnty";
+	rename -uid "432A559C-488D-5C56-C9E5-D4A16AB42AEB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_84__pntz";
+	rename -uid "D98CC7A2-4D5E-DF79-A814-C58547815D30";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_85__pntx";
+	rename -uid "51D9F31A-4B9F-3ED4-3437-059D46906D71";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_85__pnty";
+	rename -uid "A08B650A-4B5C-851D-DE0C-958C21BCEEAF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_85__pntz";
+	rename -uid "82E77386-4686-9DBC-857F-C5A73D36FBB0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_86__pntx";
+	rename -uid "A46F9315-4960-112E-CA7E-5EA2E9D87325";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_86__pnty";
+	rename -uid "7EE10E8E-4623-738A-B872-03B5A79CCF88";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_86__pntz";
+	rename -uid "D9B205DC-4331-BCFB-372A-00A1B0CADFEC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_87__pntx";
+	rename -uid "9DE6C2D7-45F2-DCC1-DF2C-1CA9FE6FEF0F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_87__pnty";
+	rename -uid "E0AC2D3E-45AF-D054-2F91-7C8B6EA59E9D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pCubeShape2_pnts_87__pntz";
+	rename -uid "DF27D8DB-4B41-B837-FEB1-EEBD855ED6AE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCube2_translateY";
+	rename -uid "09C03C26-42D1-4530-19CB-39A4B94A77F1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 2.4587290201646095;
+createNode animCurveTL -n "pasted__pasted__pCube2_translateX";
+	rename -uid "DD107359-4249-C809-1FC2-B7800D183A01";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 -7.1152154132302439;
+createNode animCurveTL -n "pasted__pasted__pCube2_translateZ";
+	rename -uid "BE137291-4E3E-DDA4-3945-D59AE5A19B8E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0.14244524753992405;
+createNode animCurveTU -n "pasted__pasted__pCube2_scaleX";
+	rename -uid "03D67871-4B56-746C-80D3-F28DA4BC8AD1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 2.2482118343263009;
+createNode animCurveTU -n "pasted__pasted__pCube2_scaleY";
+	rename -uid "E1054536-4599-AA90-AD50-3784005875E0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0.37671907922670328;
+createNode animCurveTU -n "pasted__pasted__pCube2_scaleZ";
+	rename -uid "03FDB87F-44A8-FE8F-72D2-7FBC7ACA1723";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 2.2482118343263009;
+createNode animCurveTU -n "pasted__pasted__pCube2_visibility";
+	rename -uid "5D3592AE-45C2-C792-E513-74AE1D7C89E6";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTA -n "pasted__pasted__pCube2_rotateX";
+	rename -uid "AFD08ECE-461A-E72B-E55E-1493DB925C77";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "pasted__pasted__pCube2_rotateY";
+	rename -uid "63349066-4F1C-1448-C911-0A8E68927A69";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "pasted__pasted__pCube2_rotateZ";
+	rename -uid "5AFF9503-4CC7-52F1-7F59-1BBCA505FFC8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode polyExtrudeFace -n "pasted__polyExtrudeFace11";
+	rename -uid "CF740D04-4172-934E-75DF-16BA42B8B25E";
+	setAttr ".ics" -type "componentList" 3 "f[18]" "f[39]" "f[53]";
+	setAttr ".ix" -type "matrix" 1.8430803426531974 0 0 0 0 0.27748860535595887 0 0 0 0 2.0200295854246195 0
+		 0.73856848047382595 1.8882620572475504 -6.7702310376688546 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" 0.7385689 2.0270064 -7.9434519 ;
+	setAttr ".rs" 47532;
+	setAttr ".lt" -type "double3" 0 2.6645352591003757e-15 2.6569098561987388 ;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -0.47375081079802994 2.0270063599255299 -8.1066577956231605 ;
+	setAttr ".cbx" -type "double3" 1.9508886505948748 2.0270063599255299 -7.7802457099780185 ;
+createNode polyTweak -n "pasted__polyTweak1";
+	rename -uid "29028740-4855-3FC9-A73C-92969A321247";
+	setAttr ".uopa" yes;
+	setAttr -s 43 ".tk";
+	setAttr ".tk[0]" -type "float3" 1.7881393e-07 8.9406967e-08 2.3841858e-07 ;
+	setAttr ".tk[1]" -type "float3" -1.7881393e-07 8.9406967e-08 2.3841858e-07 ;
+	setAttr ".tk[6]" -type "float3" 0.010541737 0.39200652 0.010289103 ;
+	setAttr ".tk[7]" -type "float3" -1.7881393e-07 8.9406967e-08 -2.3841858e-07 ;
+	setAttr ".tk[8]" -type "float3" -0.010292292 0.39200658 0.010541737 ;
+	setAttr ".tk[9]" -type "float3" -0.010292292 0.39200658 -0.010541707 ;
+	setAttr ".tk[12]" -type "float3" 0.010292351 0.39200658 0.010538548 ;
+	setAttr ".tk[13]" -type "float3" 0.010292351 0.39200658 -0.010538518 ;
+	setAttr ".tk[23]" -type "float3" 0.010541737 0.39200652 -0.010288596 ;
+	setAttr ".tk[24]" -type "float3" 0.010292828 0.39200658 0.010541737 ;
+	setAttr ".tk[25]" -type "float3" 0.010292828 0.39200658 -0.010541707 ;
+	setAttr ".tk[28]" -type "float3" -0.010288656 0.39200658 0.010538548 ;
+	setAttr ".tk[29]" -type "float3" -0.010288656 0.39200658 -0.010538518 ;
+	setAttr ".tk[37]" -type "float3" -0.010537982 0.39200652 0.010289103 ;
+	setAttr ".tk[39]" -type "float3" -0.010537982 0.39200652 -0.010288596 ;
+	setAttr ".tk[41]" -type "float3" -0.010292292 0.39200658 -0.010542274 ;
+	setAttr ".tk[43]" -type "float3" 0.010292828 0.39200658 -0.010542274 ;
+	setAttr ".tk[44]" -type "float3" -0.010292292 0.39200658 0.010542214 ;
+	setAttr ".tk[46]" -type "float3" 0.010292828 0.39200658 0.010542214 ;
+	setAttr ".tk[48]" -type "float3" 0.010292351 0.39200658 0.010542214 ;
+	setAttr ".tk[51]" -type "float3" -0.010288656 0.39200658 0.010542214 ;
+	setAttr ".tk[53]" -type "float3" 0.010292351 0.39200658 -0.010537982 ;
+	setAttr ".tk[54]" -type "float3" -0.010288656 0.39200658 -0.010537982 ;
+	setAttr ".tk[56]" -type "float3" 0.010541737 -0.39200306 0.010289103 ;
+	setAttr ".tk[57]" -type "float3" 0.010541737 -0.39200306 -0.010288596 ;
+	setAttr ".tk[58]" -type "float3" -0.010537982 -0.39200306 0.010289103 ;
+	setAttr ".tk[59]" -type "float3" -0.010537982 -0.39200306 -0.010288596 ;
+	setAttr ".tk[60]" -type "float3" -0.010292292 -0.39200306 0.010541737 ;
+	setAttr ".tk[61]" -type "float3" 0.010292828 -0.39200306 0.010541737 ;
+	setAttr ".tk[62]" -type "float3" -0.010292292 -0.39200306 -0.010542274 ;
+	setAttr ".tk[63]" -type "float3" 0.010292828 -0.39200306 -0.010542274 ;
+	setAttr ".tk[64]" -type "float3" -0.010292292 -0.39200306 -0.010541707 ;
+	setAttr ".tk[65]" -type "float3" 0.010292828 -0.39200306 -0.010541707 ;
+	setAttr ".tk[66]" -type "float3" 0.010292828 -0.39200306 0.010542214 ;
+	setAttr ".tk[67]" -type "float3" -0.010292292 -0.39200306 0.010542214 ;
+	setAttr ".tk[68]" -type "float3" 0.010292351 -0.39200306 -0.010538518 ;
+	setAttr ".tk[69]" -type "float3" -0.010288656 -0.39200306 -0.010538518 ;
+	setAttr ".tk[70]" -type "float3" 0.010292351 -0.39200306 0.010542214 ;
+	setAttr ".tk[71]" -type "float3" -0.010288656 -0.39200306 0.010542214 ;
+	setAttr ".tk[72]" -type "float3" 0.010292351 -0.39200306 0.010538548 ;
+	setAttr ".tk[73]" -type "float3" -0.010288656 -0.39200306 0.010538548 ;
+	setAttr ".tk[74]" -type "float3" -0.010288656 -0.39200306 -0.010537982 ;
+	setAttr ".tk[75]" -type "float3" 0.010292351 -0.39200306 -0.010537982 ;
+createNode polyExtrudeFace -n "pasted__pasted__polyExtrudeFace9";
+	rename -uid "58829489-4116-8BCA-FD20-A0A10E05372D";
+	setAttr ".ics" -type "componentList" 5 "f[37]" "f[41]" "f[43]" "f[49]" "f[51]";
+	setAttr ".ix" -type "matrix" 2.2482118343263009 0 0 0 0 0.37671907922670328 0 0 0 0 2.2482118343263009 0
+		 -7.1152154132302439 2.4587290201646095 0.14244524753992405 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" -7.1195083 2.2703695 0.14244525 ;
+	setAttr ".rs" 63104;
+	setAttr ".lt" -type "double3" 5.3290705182007514e-15 0 2.2641377900130051 ;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -8.6026042078574854 2.270369480551258 -1.3449440831027886 ;
+	setAttr ".cbx" -type "double3" -5.6364125144184314 2.2703695142325682 1.6298345781826367 ;
+createNode polyExtrudeFace -n "pasted__pasted__polyExtrudeFace8";
+	rename -uid "73A21332-4171-40F2-B4A5-E9A0D3946FF7";
+	setAttr ".ics" -type "componentList" 6 "f[17]" "f[21]" "f[23]" "f[25]" "f[27]" "f[29]";
+	setAttr ".ix" -type "matrix" 2.2482118343263009 0 0 0 0 0.37671907922670328 0 0 0 0 2.2482118343263009 0
+		 -7.1152154132302439 2.4587290201646095 0.14244524753992405 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" -7.1152148 2.458729 0.14244525 ;
+	setAttr ".rs" 39916;
+	setAttr ".lt" -type "double3" 2.2204460492503131e-16 -4.4408920985006262e-16 0.36328376479145952 ;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -8.5940172400111141 2.270369480551258 -1.3363573832641527 ;
+	setAttr ".cbx" -type "double3" -5.6364125144184314 2.647088559777961 1.6212478783440007 ;
+createNode polyExtrudeFace -n "pasted__pasted__polyExtrudeFace7";
+	rename -uid "C5A53F28-43B5-AA86-32F9-68B2BA58C906";
+	setAttr ".ics" -type "componentList" 3 "f[0]" "f[2]" "f[4:5]";
+	setAttr ".ix" -type "matrix" 2.2482118343263009 0 0 0 0 0.37671907922670328 0 0 0 0 2.2482118343263009 0
+		 -7.1152154132302439 2.4587290201646095 0.14244524753992405 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" -7.1152153 2.458729 0.14244525 ;
+	setAttr ".rs" 64631;
+	setAttr ".lt" -type "double3" 0 -4.4408920985006262e-16 0.35469675310012372 ;
+	setAttr ".kft" no;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -8.2393213303933948 2.270369480551258 -0.98166120563869752 ;
+	setAttr ".cbx" -type "double3" -5.991109496067093 2.647088559777961 1.2665517007185456 ;
+createNode polyExtrudeFace -n "pasted__pasted__polyExtrudeFace6";
+	rename -uid "9EC88AEC-4480-6AC1-B5A8-8E8DEBB838AB";
+	setAttr ".ics" -type "componentList" 1 "f[4:5]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 -7 6 4 1;
+	setAttr ".ws" yes;
+	setAttr ".pvt" -type "float3" -7 6 4 ;
+	setAttr ".rs" 56871;
+	setAttr ".c[0]"  0 1 1;
+	setAttr ".cbn" -type "double3" -7.5 5.5000000894069672 3.4999997615814209 ;
+	setAttr ".cbx" -type "double3" -6.5 6.5 4.5000002384185791 ;
+createNode polyCube -n "pasted__pasted__polyCube2";
+	rename -uid "6231EEF3-42E8-20B8-B263-E19204CFA6DD";
+	setAttr ".cuv" 4;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_0__pntx";
+	rename -uid "4BEAF3CF-4D8E-87AB-C47C-DC90D4334813";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_0__pnty";
+	rename -uid "BBC8F738-4CA5-2C86-1D47-96AC2E6B7BE2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_0__pntz";
+	rename -uid "6E5AFADE-4758-3C96-0420-A287CD1ECD66";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_1__pntx";
+	rename -uid "F227BDBF-4F63-FC56-161A-95BCC3E3877B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_1__pnty";
+	rename -uid "C8A463D1-4FD5-EB45-713A-08BA91F712B4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_1__pntz";
+	rename -uid "7F316AA6-4457-1F10-FE3C-38902E880DDD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_2__pntx";
+	rename -uid "6797AA50-4E88-7220-D2A3-8C859C8F5180";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_2__pnty";
+	rename -uid "D6441B8B-4B61-1335-1C99-74BEA81D8E32";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_2__pntz";
+	rename -uid "DC6A02B6-492D-083B-ED9E-8EA096FF57CE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_3__pntx";
+	rename -uid "B569BA8A-4791-6774-5879-29A63B0889EA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_3__pnty";
+	rename -uid "F352C69F-4B8A-F8BB-F5D2-E19C3B037997";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_3__pntz";
+	rename -uid "07059E1C-4E7E-17EA-F7D5-5D8447F24F26";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_4__pntx";
+	rename -uid "DC5A8F18-4834-4F8D-82B9-CE8AB383A8B1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_4__pnty";
+	rename -uid "1E5FFC25-4104-DEF9-BC0B-F886C1F245C4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_4__pntz";
+	rename -uid "C04FC3CC-4D2A-3ED2-9A8B-4281E6B4DE01";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_5__pntx";
+	rename -uid "F6945828-4F79-7942-43A6-7490AB68A2C6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_5__pnty";
+	rename -uid "2D0F4648-4804-148D-4840-9F9889C5DADE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_5__pntz";
+	rename -uid "1E979867-47EF-3CCD-56B5-0290C9466AE6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_6__pntx";
+	rename -uid "4CA512C3-4493-2AEB-8CAA-B69BFF342AB1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_6__pnty";
+	rename -uid "72F0BDBD-4432-E498-E468-C688CCF9154A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_6__pntz";
+	rename -uid "ABEB7A45-4F45-B7BD-E47A-4EB247A5938E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_7__pntx";
+	rename -uid "846DD4B6-4DCF-E613-3445-FF81CCA78DDE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_7__pnty";
+	rename -uid "4FDB9D69-4F7C-3F7E-B45F-6B9F442F7D9B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_7__pntz";
+	rename -uid "21CFD0EB-413A-7CA7-54F7-79852D2B8FAD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_8__pntx";
+	rename -uid "728F49BD-4EF2-D905-2088-65A54250F258";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_8__pnty";
+	rename -uid "5218EE17-430B-CED9-419E-B98B7FF6F76A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_8__pntz";
+	rename -uid "A45A7BF8-4E07-94A1-97D0-CF9B410B9875";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_9__pntx";
+	rename -uid "67922EC6-44BF-C406-E194-DD8901090113";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_9__pnty";
+	rename -uid "B5135D47-495F-1D1D-7A57-809939D4B334";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_9__pntz";
+	rename -uid "A9A96C68-44F2-4D5E-3108-BEB609547965";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_10__pntx";
+	rename -uid "5986BF92-49A7-0834-6833-E8AEB54AE3AA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_10__pnty";
+	rename -uid "6642DE92-40AF-E6CD-45F6-77BAE8F846EB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_10__pntz";
+	rename -uid "0474C0D1-4F57-C14D-447E-B18B30969BC8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_11__pntx";
+	rename -uid "A72B51A7-44C9-CA0B-1D7B-DA9D52D59175";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_11__pnty";
+	rename -uid "FDAD6A62-413F-903D-865B-F2BF446F04BA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_11__pntz";
+	rename -uid "2866F6F7-40AF-9672-7BD3-EBB2EF2C8A99";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_12__pntx";
+	rename -uid "F36C13ED-4DBC-8AF7-E057-88ABDE4C59ED";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_12__pnty";
+	rename -uid "F61123B7-4032-BBA7-5178-A9A22C7BD07C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_12__pntz";
+	rename -uid "4C4E5A94-4722-961F-F1C0-41B1CB3FADA1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_13__pntx";
+	rename -uid "B70450D5-4C47-42C6-3FF9-C69F8E217C5D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_13__pnty";
+	rename -uid "E7C40307-46A9-201C-48F4-B1AFE9992B75";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_13__pntz";
+	rename -uid "4911E50D-476D-234A-5B22-B1A1DC0F1076";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_14__pntx";
+	rename -uid "7E2A704D-4E06-1401-89E0-46B0F79FF07E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_14__pnty";
+	rename -uid "C9A7782A-4EDE-995C-E21E-8A9195FC8027";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_14__pntz";
+	rename -uid "059B797C-4FBB-E99A-5569-02958C8F5B2A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_15__pntx";
+	rename -uid "EAB58004-4A29-CD7B-8C3E-A7AD4B994AB0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_15__pnty";
+	rename -uid "27FDFF27-4C6D-9D6C-F06F-D09605A57A53";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_15__pntz";
+	rename -uid "313F865E-4C65-1429-A8D6-D1817D36A02F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_16__pntx";
+	rename -uid "994E8306-40D1-C4CF-E360-29A739DA1A49";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_16__pnty";
+	rename -uid "9EFD03BE-4973-B631-2FDF-CABED69FE08B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_16__pntz";
+	rename -uid "59ACF1F5-4FB4-B5EF-C144-00BAEEE44149";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_17__pntx";
+	rename -uid "A487618B-4655-77E1-7869-70BDCF95557A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_17__pnty";
+	rename -uid "1A0DC789-4C67-90E1-FAB6-5B850A7CE266";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_17__pntz";
+	rename -uid "F8DEC625-401D-9789-84DB-96A111ED616A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_18__pntx";
+	rename -uid "BEA8259D-412D-E7CA-E4E4-57ACE62B8F0F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_18__pnty";
+	rename -uid "47F8B546-4891-1279-7F46-FB9C840FEBAE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_18__pntz";
+	rename -uid "6D27E925-4BBB-4956-51E6-3E8910881917";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_19__pntx";
+	rename -uid "A56F262F-4CEB-8326-32B3-E294768F72B9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_19__pnty";
+	rename -uid "459DA6BB-4299-ABE3-5F4E-169E289351BB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_19__pntz";
+	rename -uid "0BC303A1-4774-3504-BE2B-53A6C3B5A386";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_20__pntx";
+	rename -uid "87E74F3E-4DA2-4BA8-9E20-5793AA0988AF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_20__pnty";
+	rename -uid "378F4550-44B3-32FE-5FC9-A780312D452E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_20__pntz";
+	rename -uid "B29FB947-4BD0-BD86-3D08-1D9395C1A39C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_21__pntx";
+	rename -uid "3CD790F5-4377-B298-7A97-AE8D8230AC36";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_21__pnty";
+	rename -uid "F348129B-41B5-27D1-20CA-CF89545ECFA8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_21__pntz";
+	rename -uid "4388DF02-48E0-9F0D-F2BA-FAAA2CE36112";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_22__pntx";
+	rename -uid "41854CA9-4C15-90D6-204E-9897027A7AA8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_22__pnty";
+	rename -uid "9B70FC25-4B91-0B6A-6C70-6699518478CE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_22__pntz";
+	rename -uid "C4B9236C-4FE7-0AC9-0DFA-24BB2E088467";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_23__pntx";
+	rename -uid "F1137A13-4BAC-9EAF-D606-99A81CD50515";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_23__pnty";
+	rename -uid "034B54CD-49C5-1C1C-E308-328210220758";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_23__pntz";
+	rename -uid "3EDBE05D-412A-FF21-A8E7-6CB1A686D5D3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_24__pntx";
+	rename -uid "4D602461-40C2-50FD-EAC6-BCAC190FFC7B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_24__pnty";
+	rename -uid "826D9B9C-4AB2-8877-9D91-F1B147374055";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_24__pntz";
+	rename -uid "DF8631AD-446E-51E1-7A78-9D87A7098EBA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_25__pntx";
+	rename -uid "3DCB6C53-45A2-75DE-9C85-AD967248F505";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_25__pnty";
+	rename -uid "154C8355-4E26-9BDC-E321-409764835E7C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_25__pntz";
+	rename -uid "072E869C-4446-3ABE-71C4-9AB85760321D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_26__pntx";
+	rename -uid "D8AFB4A1-4D27-9153-050E-A0999E54CE90";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_26__pnty";
+	rename -uid "740F9904-485D-DCAE-BA98-0B99D303D483";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_26__pntz";
+	rename -uid "E798F419-4CBF-724A-7888-D1BBA1A31EE6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_27__pntx";
+	rename -uid "F9C39D54-45F2-A8A7-8650-638C173B00C1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_27__pnty";
+	rename -uid "87E53125-4B80-436C-1716-EB9FA29F2A84";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_27__pntz";
+	rename -uid "0949CD7A-42AD-8C96-AF6A-E6A8B73DE173";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_28__pntx";
+	rename -uid "188F8978-4682-8C07-401F-35A314500592";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_28__pnty";
+	rename -uid "3C5D33D5-4C61-D4F2-58AB-179B679CAC07";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_28__pntz";
+	rename -uid "817191A7-4DA8-4368-0D1D-FAA1BDB2423E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_29__pntx";
+	rename -uid "FEFDC029-4AE3-068E-63E9-2C9102810E05";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_29__pnty";
+	rename -uid "BF03A027-449B-B7AD-F5AE-A38EB8E8BBC1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_29__pntz";
+	rename -uid "81432F71-4C68-14EB-9A30-F7A0971CC68C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_30__pntx";
+	rename -uid "87CB4B90-42C7-0D4D-93F6-02B9634DA6E4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_30__pnty";
+	rename -uid "05442ACC-4E61-8041-3C22-5A9554AB5512";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_30__pntz";
+	rename -uid "78FFA987-453B-20E5-3359-0C938DFE01C0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_31__pntx";
+	rename -uid "A1A77029-4692-B4F1-4C72-419708311697";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_31__pnty";
+	rename -uid "4F7DBF7B-4FDB-C13F-DCEE-62B18FA9429D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_31__pntz";
+	rename -uid "E72838DE-4401-5D19-DE23-038EAE8CDE14";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_32__pntx";
+	rename -uid "9C0C8563-4431-013B-E740-609BC8744DA7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_32__pnty";
+	rename -uid "43D31824-40AA-BE8A-EB7C-7D945014A8A6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_32__pntz";
+	rename -uid "33EAD0D4-446C-70B3-B60A-C79A525E9E3E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_33__pntx";
+	rename -uid "A65CFC3E-4EC3-D37E-65D3-D1826E456353";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_33__pnty";
+	rename -uid "F842562B-432F-7B49-510A-54A62500DC9D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_33__pntz";
+	rename -uid "4D617F0A-45CC-CF60-1F68-72BEFAE63214";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_34__pntx";
+	rename -uid "BD6097EC-483A-03F4-F280-1FA73014DDE8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_34__pnty";
+	rename -uid "FABC364C-4624-EA32-FDE2-19B3116FC221";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_34__pntz";
+	rename -uid "D4A06121-4F63-E18D-B8C6-12A0FEBE1FC3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_35__pntx";
+	rename -uid "429642F7-4F11-2374-19A1-61AB0B839CEE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_35__pnty";
+	rename -uid "9E38539B-40BC-05F9-D22C-0090C9D30906";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_35__pntz";
+	rename -uid "F6F1C28C-404E-E232-B0A0-3CBF79D7BF47";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_36__pntx";
+	rename -uid "9C621CFC-48F5-BF54-7DC5-A28594112370";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_36__pnty";
+	rename -uid "CCAF52FA-4164-D355-5B70-7BB75AC52346";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_36__pntz";
+	rename -uid "11D78B8F-4EDB-72F6-94D0-0DB2F3246114";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_37__pntx";
+	rename -uid "23FE87E7-4F85-3C4E-FEE2-B98FDA2649A4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_37__pnty";
+	rename -uid "78F68433-4405-8EB8-5DF3-81B8FB289698";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_37__pntz";
+	rename -uid "437CA2CC-4382-E264-9244-6784D034F72E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_38__pntx";
+	rename -uid "2509E557-49F6-E8A0-905D-769DE58B97F5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_38__pnty";
+	rename -uid "0F26B578-4FC0-E402-9FA9-79B7F2DAB1EE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_38__pntz";
+	rename -uid "2A38A02F-4172-32D2-5D18-BDB9850A2457";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_39__pntx";
+	rename -uid "4DC40B31-462F-6D82-EB8F-E8AFDA71CB69";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_39__pnty";
+	rename -uid "45A6ED0F-4A31-CB4F-5816-42966780D8CD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_39__pntz";
+	rename -uid "D80E8B80-4440-5CFC-BC6F-2AA7B990EECD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_40__pntx";
+	rename -uid "3946E45B-485D-A048-9DE6-68B5FF30230E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_40__pnty";
+	rename -uid "F1961FB3-45F1-C4BA-18AE-55A7699CD84A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_40__pntz";
+	rename -uid "3274DB6B-4B50-0DB6-C914-419CCE799277";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_41__pntx";
+	rename -uid "6A99C4EC-4864-938E-E150-F5B951FC9FB6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_41__pnty";
+	rename -uid "A8BC08DD-43D0-6BF6-24E9-7D93C163E8A4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_41__pntz";
+	rename -uid "A498DF37-4622-7C6D-DB07-8FAA6F0135A9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_42__pntx";
+	rename -uid "2A61BD29-4C13-0329-5F44-B18EAB485D47";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_42__pnty";
+	rename -uid "A3D2D981-45DF-05B7-6AB8-60B86EF7E186";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_42__pntz";
+	rename -uid "11385BCC-405B-85A1-F4D3-1E88AA931813";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_43__pntx";
+	rename -uid "C4D1B976-431F-6DB0-BD66-80A114F601FF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_43__pnty";
+	rename -uid "8BC17794-4230-0EA4-F3C6-238210B6AD38";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_43__pntz";
+	rename -uid "D8D03452-4586-CA37-4537-3FAA64B4AD77";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_44__pntx";
+	rename -uid "2065D5C7-49EC-3E4E-99D7-17B7500CE999";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_44__pnty";
+	rename -uid "0C38A726-4E5A-2910-246F-53AA9671531A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_44__pntz";
+	rename -uid "5652DD83-4E6E-0636-0156-0C9877E50DB9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_45__pntx";
+	rename -uid "897993F7-4995-4C59-6A08-F8B9F965DB4C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_45__pnty";
+	rename -uid "CC729E8F-4605-85BE-C957-8B8203F0D439";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_45__pntz";
+	rename -uid "6677AC08-4AF8-7137-5596-498FE981CAD0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_46__pntx";
+	rename -uid "B9401915-42C8-2D8C-3B70-24A9BE603045";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_46__pnty";
+	rename -uid "E10837B8-4BB7-59A0-7518-44ADAC0549BE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_46__pntz";
+	rename -uid "B9596A5C-4737-6490-9595-B892FC105759";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_47__pntx";
+	rename -uid "4F7F0E9D-4131-78B9-C9BA-5D8C830A4CF8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_47__pnty";
+	rename -uid "32D3E2D3-4402-7AC8-6BAA-268FB9BD9C26";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_47__pntz";
+	rename -uid "BD172F7C-4C95-EC08-52CB-8692EB6E7F3E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_48__pntx";
+	rename -uid "A9EC17A9-4A96-2A26-CB67-CEABFEA937DD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_48__pnty";
+	rename -uid "0368D6E6-4038-BD52-8CDB-A4939C453BC5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_48__pntz";
+	rename -uid "059D9575-4DEF-7A21-1170-FF8901FA130E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_49__pntx";
+	rename -uid "204A7CF1-4674-F74D-521F-C284251A804D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_49__pnty";
+	rename -uid "9C16B826-4349-1FD2-1A4C-45A43883F18A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_49__pntz";
+	rename -uid "F99549F2-4477-D535-B932-B091C46F002D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_50__pntx";
+	rename -uid "D6E73F6D-4BE8-6D8A-9D4D-00858BA3E682";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_50__pnty";
+	rename -uid "13E5EED4-429D-4E9B-1360-4C9F1CC1B886";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_50__pntz";
+	rename -uid "BC1F7DB8-44EB-15FA-CF59-96883A4711EC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_51__pntx";
+	rename -uid "0C393D03-406E-A680-76DA-50A93673DA85";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_51__pnty";
+	rename -uid "4F88991F-46F6-6942-39DD-09877CF1E08E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_51__pntz";
+	rename -uid "3AC4CF76-48A1-91BF-990B-1390083634E9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_52__pntx";
+	rename -uid "CA898928-4B53-837D-BA0C-96A878A4D05F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_52__pnty";
+	rename -uid "42612365-428E-2D3C-9D89-1295134631D0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_52__pntz";
+	rename -uid "1D4FC653-4096-E156-452D-F1BC170BF1FF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_53__pntx";
+	rename -uid "CFC74A2F-44F0-2384-4707-05AAC8F44D11";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_53__pnty";
+	rename -uid "46ABD326-4F20-0313-8B14-A984F15A81E7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_53__pntz";
+	rename -uid "F9D1BB93-48DD-BE45-E9D5-A89179719EDC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_54__pntx";
+	rename -uid "21EFD199-4B37-6E08-2F05-E388A70FE878";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_54__pnty";
+	rename -uid "C86A7293-4B2B-F065-A896-39B985A70727";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_54__pntz";
+	rename -uid "31A6AABA-4BCA-E3EE-86EB-56B2C237F617";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_55__pntx";
+	rename -uid "E45618D1-457A-CCA8-986A-5FB4DC0E98C7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_55__pnty";
+	rename -uid "3587A14D-4D09-9DBC-D54D-FBBE64623679";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_55__pntz";
+	rename -uid "5E549CB3-47FD-F7D9-972A-A7A359F936EF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_56__pntx";
+	rename -uid "B6DD5D7E-4A0D-0D9C-DA2A-238DDB17F5DF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_56__pnty";
+	rename -uid "522E964D-4B58-6CDA-05BF-53B85D9BB7C6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_56__pntz";
+	rename -uid "6B76DDFD-44A5-FFF2-4A9D-37B7C0C04D52";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_57__pntx";
+	rename -uid "802939AB-4CFD-CF0D-A374-60824C90E49B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_57__pnty";
+	rename -uid "47FCD322-44CD-1DCD-A778-ECBB53D9ADE7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_57__pntz";
+	rename -uid "76CF7C81-4D6B-056A-0473-BAAD4C1F965C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_58__pntx";
+	rename -uid "B4F571DB-4692-6C95-E26E-5D9EB5BA8527";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_58__pnty";
+	rename -uid "87749382-4491-0D53-E0FA-85A09F624DDB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_58__pntz";
+	rename -uid "76372BB2-45AF-68D1-F97C-D9B260CF531F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_59__pntx";
+	rename -uid "C326FC79-4B98-3698-FE4F-B08BB76B759A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_59__pnty";
+	rename -uid "22214B99-4484-A1DD-3ACE-6A9B43C444E8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_59__pntz";
+	rename -uid "5F1D495B-49B9-5BEA-FCE5-AAB3AD6C5F18";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_60__pntx";
+	rename -uid "5F4695F9-45FC-2E34-7D57-3B9563B24076";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_60__pnty";
+	rename -uid "45DF864A-4903-9272-764A-C883C9E8560F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_60__pntz";
+	rename -uid "977E458A-4FC1-7284-6D7E-71973CBD488A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_61__pntx";
+	rename -uid "C8F15656-44AF-B1D2-0FFC-82A83A5BBE06";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_61__pnty";
+	rename -uid "894D8AAC-400B-4BC3-89A8-5C8069EA4DDB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_61__pntz";
+	rename -uid "09B7553C-413C-E97D-F849-B18926EAFC3E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_62__pntx";
+	rename -uid "3062677F-4F59-D1CD-2367-4DB20C42FBA5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_62__pnty";
+	rename -uid "A55E55C8-4B8F-3CE8-DCF5-9E95A405079F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_62__pntz";
+	rename -uid "5C259739-4A1B-3F8D-41F8-42A33B771556";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_63__pntx";
+	rename -uid "A93DE8C2-49FD-9592-192B-F0A902ED6F36";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_63__pnty";
+	rename -uid "0A99D20D-4450-D3B9-7BA3-E2A324C20EAF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_63__pntz";
+	rename -uid "917A98C8-41F2-7F02-2771-67BA1A37F6A7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_64__pntx";
+	rename -uid "0E6C995F-4798-204A-5EA6-F280A9E56AEC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_64__pnty";
+	rename -uid "A71CEBF3-42DE-3B01-FC7A-3CA47314D6FE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_64__pntz";
+	rename -uid "1AA55041-415C-D748-0094-24A625CBCC70";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_65__pntx";
+	rename -uid "2704A523-4373-534B-DBFA-02ADD2EF303B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_65__pnty";
+	rename -uid "95B4CC86-420D-1F52-90E3-7999BBF8F4F8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_65__pntz";
+	rename -uid "A66D5CC2-47C1-6417-FAB3-E7B71CA7A5D3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_66__pntx";
+	rename -uid "AE66387F-41FB-DB3C-BDDC-E395E680343B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_66__pnty";
+	rename -uid "70992587-4FEE-9616-1F07-588C113D6207";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_66__pntz";
+	rename -uid "2C586734-40A3-E63E-0DEA-189ACB58C210";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_67__pntx";
+	rename -uid "8C285557-4080-A72A-F93F-9E81067C900D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_67__pnty";
+	rename -uid "4976D090-4893-A8C6-E752-4CA920114A54";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_67__pntz";
+	rename -uid "F670B02C-480A-8C3A-6A88-2E84CDBD846F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_68__pntx";
+	rename -uid "DFEE20DC-4E02-364B-D22A-D28DE93070D1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_68__pnty";
+	rename -uid "E90B2CB7-493A-7F68-04A1-36BEF4FFA579";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_68__pntz";
+	rename -uid "2413D8B0-4589-1085-5B41-5293A1425163";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_69__pntx";
+	rename -uid "7C3F56B9-489E-3D4F-DE4B-64BB13FB1954";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_69__pnty";
+	rename -uid "6BA2C870-4511-87F2-2C34-BF917F3B2A80";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_69__pntz";
+	rename -uid "826C97BC-4C3E-2DD3-CD94-179650B4F9BF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_70__pntx";
+	rename -uid "CACAA9AA-4BD4-49B9-75CA-8689944A4803";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_70__pnty";
+	rename -uid "1D903960-4594-4A79-F996-FC9049437124";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_70__pntz";
+	rename -uid "3B176A17-4C21-A529-9A76-DF8484F6592F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_71__pntx";
+	rename -uid "259C24DB-408C-70C6-B9FE-3390B3022462";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_71__pnty";
+	rename -uid "AAF741FE-45E0-6196-AE6F-CDAC9E0CC2B1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_71__pntz";
+	rename -uid "D5E9C415-4EA9-FB94-86C4-C8B26FD883C1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_72__pntx";
+	rename -uid "E3299C8D-4ECA-939E-1832-62A15A3AD0BB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_72__pnty";
+	rename -uid "9A14E548-4B9D-49EC-DEB1-B99C307FA659";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_72__pntz";
+	rename -uid "EDCF56FF-40BE-2E1A-EF82-DD992A45DB76";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_73__pntx";
+	rename -uid "7B173A8B-4D4D-55E7-795A-CE94FF85041D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_73__pnty";
+	rename -uid "ECFAB6E1-433C-0A58-E320-6EAA103ADDE3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_73__pntz";
+	rename -uid "D7EB3535-405B-850A-6319-F182EECF909E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_74__pntx";
+	rename -uid "75D9EA59-4E04-0B05-A621-568E169F518F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_74__pnty";
+	rename -uid "C24226B3-4A50-B448-EEC4-B198F1264CEE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_74__pntz";
+	rename -uid "5A282DE6-41FF-4301-5248-4EA440722E2F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_75__pntx";
+	rename -uid "4AEEA887-426A-2153-7B96-45B68B514403";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_75__pnty";
+	rename -uid "0498CA74-48A3-83A0-49A5-36B32AEB459F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_75__pntz";
+	rename -uid "8F44B36D-49DE-090C-5941-9FB91ED507DC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_76__pntx";
+	rename -uid "1561D07A-4B93-E911-C759-868E6CDF7DC6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_76__pnty";
+	rename -uid "F00BFD69-4AEB-A237-D127-59833CAF0658";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_76__pntz";
+	rename -uid "45443E1E-4420-E7B5-DFC2-5A9BD959063F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_77__pntx";
+	rename -uid "34D8E507-4920-21BD-47D4-3F9D18540049";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_77__pnty";
+	rename -uid "F056384E-4F89-9DBB-9C67-2EAD1F070E11";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_77__pntz";
+	rename -uid "EEF49DE1-4B7B-5C40-400D-4396C1652259";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_78__pntx";
+	rename -uid "F98822C7-4DB8-D567-7114-978352C5BD1F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_78__pnty";
+	rename -uid "38FC3210-4F6E-538C-2F68-C3B2FA9E9DB4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_78__pntz";
+	rename -uid "6A99C52D-4DFC-C2A4-F0F7-71933CA4B10D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_79__pntx";
+	rename -uid "64CF026C-48C4-E250-15A7-A98A97F07CB3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_79__pnty";
+	rename -uid "1FF92D94-49F1-4DE8-6A5C-34AFDA2BFA28";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_79__pntz";
+	rename -uid "E4854EC6-44D8-4BCD-95B7-E5A559FBDA22";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_80__pntx";
+	rename -uid "43A1B832-4D1C-85A3-F0B9-24A2590D2C5E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_80__pnty";
+	rename -uid "BA6F0AAB-48C4-5012-DBC3-5DA631618FC2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_80__pntz";
+	rename -uid "7CBAB8BF-4744-01A5-45B4-C8B928CD04FA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_81__pntx";
+	rename -uid "716DC3F7-4777-42A2-0552-38A1BDED0281";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_81__pnty";
+	rename -uid "DC9E060B-4449-3FA6-5BDD-FEA72A1B143D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_81__pntz";
+	rename -uid "08888F24-409D-5112-AA5B-399014A40EAD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_82__pntx";
+	rename -uid "00F2F1F3-489C-8ACD-0DFA-2090EB58B654";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_82__pnty";
+	rename -uid "5F812A99-4C4D-1714-0CF0-EAA032D1C1C3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_82__pntz";
+	rename -uid "A9F31825-4BA5-A31E-0202-4D9249A113FD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_83__pntx";
+	rename -uid "88EACC35-4961-77DF-6EA7-8BADA09F9364";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_83__pnty";
+	rename -uid "CB326E63-4ADE-0CB0-55F9-4EB6058D7A6D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_83__pntz";
+	rename -uid "F2646810-4A13-1A6E-1D83-B4B103070A20";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_84__pntx";
+	rename -uid "56AD80B5-41F7-542B-9D25-67BF821C9279";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_84__pnty";
+	rename -uid "DB9C26AD-4C69-7D50-102A-168C63DA4D79";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_84__pntz";
+	rename -uid "1369A287-45B4-1698-D331-409992CFFCB6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_85__pntx";
+	rename -uid "03CED8EA-44A2-5BFF-44A9-B39E1A0BB1F3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_85__pnty";
+	rename -uid "FF5D0928-431E-F2AC-B027-779C64DC85DF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_85__pntz";
+	rename -uid "DB045AA7-45D6-F384-EE57-FA99E4CA9EAF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_86__pntx";
+	rename -uid "2F17ECE1-494E-F424-789B-78AE91799B70";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_86__pnty";
+	rename -uid "4E1C352B-43B3-41C9-CB05-8DA046AF45D5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_86__pntz";
+	rename -uid "3897213E-44F7-0DA5-BE36-F4946EF284E7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_87__pntx";
+	rename -uid "FC812141-4C2B-ADB7-8823-BB9880151D9F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_87__pnty";
+	rename -uid "2666B822-487C-07DB-ECDE-80AFCD876450";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "pasted__pasted__pCubeShape2_pnts_87__pntz";
+	rename -uid "DDE62831-48AE-75CA-D486-29B15E8B3B2B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "group1_translateX";
+	rename -uid "95F39EB9-40B2-1C34-5AA3-7D8F1BB687A7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 -7.7564516290737835;
+createNode animCurveTL -n "group1_translateY";
+	rename -uid "01D6AFAA-4CA5-47D8-DA38-26A34ECB1CB5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0.67154496213127768;
+createNode animCurveTL -n "group1_translateZ";
+	rename -uid "91951200-49F0-06AC-5C6D-D79AE8220E2E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 9.8556042276044415;
+createNode animCurveTU -n "group1_visibility";
+	rename -uid "30171E4A-4039-B18B-58CB-EE9DF1FC8CA7";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTA -n "group1_rotateX";
+	rename -uid "B282B817-4A7B-FA60-131B-A598CC1C5466";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "group1_rotateY";
+	rename -uid "91E60396-45AD-2924-6F2B-919B0A699E23";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "group1_rotateZ";
+	rename -uid "A6301E85-4CFA-30D9-A593-7899B01BDBFA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "group1_scaleX";
+	rename -uid "40FCB90D-43F3-CF5C-31D3-E5BDA1CF5C43";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "group1_scaleY";
+	rename -uid "9BF25D2E-4C0F-4A8C-D421-358EE536CD96";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "group1_scaleZ";
+	rename -uid "8A63E345-4E3D-B58F-6384-5BA93A01DE97";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -729,17 +4015,6 @@ connectAttr "polyCube1.out" "FloorMesh.i";
 connectAttr "polyExtrudeFace5.out" "pCylinderShape1.i";
 connectAttr "polyExtrudeFace10.out" "pCylinderShape2.i";
 connectAttr "polyTorus1.out" "pTorusShape1.i";
-connectAttr "pCube2_scaleX.o" "pCube2.sx";
-connectAttr "pCube2_scaleY.o" "pCube2.sy";
-connectAttr "pCube2_scaleZ.o" "pCube2.sz";
-connectAttr "pCube2_visibility.o" "pCube2.v";
-connectAttr "pCube2_translateX.o" "pCube2.tx";
-connectAttr "pCube2_translateY.o" "pCube2.ty";
-connectAttr "pCube2_translateZ.o" "pCube2.tz";
-connectAttr "pCube2_rotateX.o" "pCube2.rx";
-connectAttr "pCube2_rotateY.o" "pCube2.ry";
-connectAttr "pCube2_rotateZ.o" "pCube2.rz";
-connectAttr "polyExtrudeFace9.out" "pCubeShape1.i";
 connectAttr "pasted__pCube2_translateY.o" "pasted__pCube2.ty";
 connectAttr "pasted__pCube2_translateX.o" "pasted__pCube2.tx";
 connectAttr "pasted__pCube2_translateZ.o" "pasted__pCube2.tz";
@@ -750,7 +4025,1054 @@ connectAttr "pasted__pCube2_visibility.o" "pasted__pCube2.v";
 connectAttr "pasted__pCube2_rotateX.o" "pasted__pCube2.rx";
 connectAttr "pasted__pCube2_rotateY.o" "pasted__pCube2.ry";
 connectAttr "pasted__pCube2_rotateZ.o" "pasted__pCube2.rz";
-connectAttr "pasted__polyExtrudeFace9.out" "pasted__pCubeShape2.i";
+connectAttr "polyExtrudeFace11.out" "pasted__pCubeShape2.i";
+connectAttr "pasted__pCubeShape2_pnts_0__pntx.o" "pasted__pCubeShape2.pt[0].px";
+connectAttr "pasted__pCubeShape2_pnts_0__pnty.o" "pasted__pCubeShape2.pt[0].py";
+connectAttr "pasted__pCubeShape2_pnts_0__pntz.o" "pasted__pCubeShape2.pt[0].pz";
+connectAttr "pasted__pCubeShape2_pnts_1__pntx.o" "pasted__pCubeShape2.pt[1].px";
+connectAttr "pasted__pCubeShape2_pnts_1__pnty.o" "pasted__pCubeShape2.pt[1].py";
+connectAttr "pasted__pCubeShape2_pnts_1__pntz.o" "pasted__pCubeShape2.pt[1].pz";
+connectAttr "pasted__pCubeShape2_pnts_2__pntx.o" "pasted__pCubeShape2.pt[2].px";
+connectAttr "pasted__pCubeShape2_pnts_2__pnty.o" "pasted__pCubeShape2.pt[2].py";
+connectAttr "pasted__pCubeShape2_pnts_2__pntz.o" "pasted__pCubeShape2.pt[2].pz";
+connectAttr "pasted__pCubeShape2_pnts_3__pntx.o" "pasted__pCubeShape2.pt[3].px";
+connectAttr "pasted__pCubeShape2_pnts_3__pnty.o" "pasted__pCubeShape2.pt[3].py";
+connectAttr "pasted__pCubeShape2_pnts_3__pntz.o" "pasted__pCubeShape2.pt[3].pz";
+connectAttr "pasted__pCubeShape2_pnts_4__pntx.o" "pasted__pCubeShape2.pt[4].px";
+connectAttr "pasted__pCubeShape2_pnts_4__pnty.o" "pasted__pCubeShape2.pt[4].py";
+connectAttr "pasted__pCubeShape2_pnts_4__pntz.o" "pasted__pCubeShape2.pt[4].pz";
+connectAttr "pasted__pCubeShape2_pnts_5__pntx.o" "pasted__pCubeShape2.pt[5].px";
+connectAttr "pasted__pCubeShape2_pnts_5__pnty.o" "pasted__pCubeShape2.pt[5].py";
+connectAttr "pasted__pCubeShape2_pnts_5__pntz.o" "pasted__pCubeShape2.pt[5].pz";
+connectAttr "pasted__pCubeShape2_pnts_6__pntx.o" "pasted__pCubeShape2.pt[6].px";
+connectAttr "pasted__pCubeShape2_pnts_6__pnty.o" "pasted__pCubeShape2.pt[6].py";
+connectAttr "pasted__pCubeShape2_pnts_6__pntz.o" "pasted__pCubeShape2.pt[6].pz";
+connectAttr "pasted__pCubeShape2_pnts_7__pntx.o" "pasted__pCubeShape2.pt[7].px";
+connectAttr "pasted__pCubeShape2_pnts_7__pnty.o" "pasted__pCubeShape2.pt[7].py";
+connectAttr "pasted__pCubeShape2_pnts_7__pntz.o" "pasted__pCubeShape2.pt[7].pz";
+connectAttr "pasted__pCubeShape2_pnts_8__pntx.o" "pasted__pCubeShape2.pt[8].px";
+connectAttr "pasted__pCubeShape2_pnts_8__pnty.o" "pasted__pCubeShape2.pt[8].py";
+connectAttr "pasted__pCubeShape2_pnts_8__pntz.o" "pasted__pCubeShape2.pt[8].pz";
+connectAttr "pasted__pCubeShape2_pnts_9__pntx.o" "pasted__pCubeShape2.pt[9].px";
+connectAttr "pasted__pCubeShape2_pnts_9__pnty.o" "pasted__pCubeShape2.pt[9].py";
+connectAttr "pasted__pCubeShape2_pnts_9__pntz.o" "pasted__pCubeShape2.pt[9].pz";
+connectAttr "pasted__pCubeShape2_pnts_10__pntx.o" "pasted__pCubeShape2.pt[10].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_10__pnty.o" "pasted__pCubeShape2.pt[10].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_10__pntz.o" "pasted__pCubeShape2.pt[10].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_11__pntx.o" "pasted__pCubeShape2.pt[11].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_11__pnty.o" "pasted__pCubeShape2.pt[11].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_11__pntz.o" "pasted__pCubeShape2.pt[11].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_12__pntx.o" "pasted__pCubeShape2.pt[12].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_12__pnty.o" "pasted__pCubeShape2.pt[12].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_12__pntz.o" "pasted__pCubeShape2.pt[12].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_13__pntx.o" "pasted__pCubeShape2.pt[13].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_13__pnty.o" "pasted__pCubeShape2.pt[13].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_13__pntz.o" "pasted__pCubeShape2.pt[13].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_14__pntx.o" "pasted__pCubeShape2.pt[14].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_14__pnty.o" "pasted__pCubeShape2.pt[14].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_14__pntz.o" "pasted__pCubeShape2.pt[14].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_15__pntx.o" "pasted__pCubeShape2.pt[15].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_15__pnty.o" "pasted__pCubeShape2.pt[15].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_15__pntz.o" "pasted__pCubeShape2.pt[15].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_16__pntx.o" "pasted__pCubeShape2.pt[16].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_16__pnty.o" "pasted__pCubeShape2.pt[16].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_16__pntz.o" "pasted__pCubeShape2.pt[16].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_17__pntx.o" "pasted__pCubeShape2.pt[17].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_17__pnty.o" "pasted__pCubeShape2.pt[17].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_17__pntz.o" "pasted__pCubeShape2.pt[17].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_18__pntx.o" "pasted__pCubeShape2.pt[18].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_18__pnty.o" "pasted__pCubeShape2.pt[18].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_18__pntz.o" "pasted__pCubeShape2.pt[18].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_19__pntx.o" "pasted__pCubeShape2.pt[19].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_19__pnty.o" "pasted__pCubeShape2.pt[19].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_19__pntz.o" "pasted__pCubeShape2.pt[19].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_20__pntx.o" "pasted__pCubeShape2.pt[20].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_20__pnty.o" "pasted__pCubeShape2.pt[20].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_20__pntz.o" "pasted__pCubeShape2.pt[20].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_21__pntx.o" "pasted__pCubeShape2.pt[21].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_21__pnty.o" "pasted__pCubeShape2.pt[21].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_21__pntz.o" "pasted__pCubeShape2.pt[21].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_22__pntx.o" "pasted__pCubeShape2.pt[22].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_22__pnty.o" "pasted__pCubeShape2.pt[22].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_22__pntz.o" "pasted__pCubeShape2.pt[22].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_23__pntx.o" "pasted__pCubeShape2.pt[23].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_23__pnty.o" "pasted__pCubeShape2.pt[23].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_23__pntz.o" "pasted__pCubeShape2.pt[23].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_24__pntx.o" "pasted__pCubeShape2.pt[24].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_24__pnty.o" "pasted__pCubeShape2.pt[24].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_24__pntz.o" "pasted__pCubeShape2.pt[24].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_25__pntx.o" "pasted__pCubeShape2.pt[25].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_25__pnty.o" "pasted__pCubeShape2.pt[25].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_25__pntz.o" "pasted__pCubeShape2.pt[25].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_26__pntx.o" "pasted__pCubeShape2.pt[26].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_26__pnty.o" "pasted__pCubeShape2.pt[26].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_26__pntz.o" "pasted__pCubeShape2.pt[26].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_27__pntx.o" "pasted__pCubeShape2.pt[27].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_27__pnty.o" "pasted__pCubeShape2.pt[27].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_27__pntz.o" "pasted__pCubeShape2.pt[27].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_28__pntx.o" "pasted__pCubeShape2.pt[28].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_28__pnty.o" "pasted__pCubeShape2.pt[28].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_28__pntz.o" "pasted__pCubeShape2.pt[28].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_29__pntx.o" "pasted__pCubeShape2.pt[29].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_29__pnty.o" "pasted__pCubeShape2.pt[29].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_29__pntz.o" "pasted__pCubeShape2.pt[29].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_30__pntx.o" "pasted__pCubeShape2.pt[30].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_30__pnty.o" "pasted__pCubeShape2.pt[30].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_30__pntz.o" "pasted__pCubeShape2.pt[30].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_31__pntx.o" "pasted__pCubeShape2.pt[31].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_31__pnty.o" "pasted__pCubeShape2.pt[31].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_31__pntz.o" "pasted__pCubeShape2.pt[31].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_32__pntx.o" "pasted__pCubeShape2.pt[32].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_32__pnty.o" "pasted__pCubeShape2.pt[32].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_32__pntz.o" "pasted__pCubeShape2.pt[32].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_33__pntx.o" "pasted__pCubeShape2.pt[33].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_33__pnty.o" "pasted__pCubeShape2.pt[33].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_33__pntz.o" "pasted__pCubeShape2.pt[33].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_34__pntx.o" "pasted__pCubeShape2.pt[34].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_34__pnty.o" "pasted__pCubeShape2.pt[34].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_34__pntz.o" "pasted__pCubeShape2.pt[34].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_35__pntx.o" "pasted__pCubeShape2.pt[35].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_35__pnty.o" "pasted__pCubeShape2.pt[35].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_35__pntz.o" "pasted__pCubeShape2.pt[35].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_36__pntx.o" "pasted__pCubeShape2.pt[36].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_36__pnty.o" "pasted__pCubeShape2.pt[36].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_36__pntz.o" "pasted__pCubeShape2.pt[36].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_37__pntx.o" "pasted__pCubeShape2.pt[37].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_37__pnty.o" "pasted__pCubeShape2.pt[37].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_37__pntz.o" "pasted__pCubeShape2.pt[37].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_38__pntx.o" "pasted__pCubeShape2.pt[38].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_38__pnty.o" "pasted__pCubeShape2.pt[38].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_38__pntz.o" "pasted__pCubeShape2.pt[38].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_39__pntx.o" "pasted__pCubeShape2.pt[39].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_39__pnty.o" "pasted__pCubeShape2.pt[39].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_39__pntz.o" "pasted__pCubeShape2.pt[39].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_40__pntx.o" "pasted__pCubeShape2.pt[40].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_40__pnty.o" "pasted__pCubeShape2.pt[40].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_40__pntz.o" "pasted__pCubeShape2.pt[40].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_41__pntx.o" "pasted__pCubeShape2.pt[41].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_41__pnty.o" "pasted__pCubeShape2.pt[41].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_41__pntz.o" "pasted__pCubeShape2.pt[41].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_42__pntx.o" "pasted__pCubeShape2.pt[42].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_42__pnty.o" "pasted__pCubeShape2.pt[42].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_42__pntz.o" "pasted__pCubeShape2.pt[42].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_43__pntx.o" "pasted__pCubeShape2.pt[43].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_43__pnty.o" "pasted__pCubeShape2.pt[43].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_43__pntz.o" "pasted__pCubeShape2.pt[43].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_44__pntx.o" "pasted__pCubeShape2.pt[44].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_44__pnty.o" "pasted__pCubeShape2.pt[44].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_44__pntz.o" "pasted__pCubeShape2.pt[44].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_45__pntx.o" "pasted__pCubeShape2.pt[45].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_45__pnty.o" "pasted__pCubeShape2.pt[45].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_45__pntz.o" "pasted__pCubeShape2.pt[45].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_46__pntx.o" "pasted__pCubeShape2.pt[46].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_46__pnty.o" "pasted__pCubeShape2.pt[46].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_46__pntz.o" "pasted__pCubeShape2.pt[46].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_47__pntx.o" "pasted__pCubeShape2.pt[47].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_47__pnty.o" "pasted__pCubeShape2.pt[47].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_47__pntz.o" "pasted__pCubeShape2.pt[47].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_48__pntx.o" "pasted__pCubeShape2.pt[48].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_48__pnty.o" "pasted__pCubeShape2.pt[48].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_48__pntz.o" "pasted__pCubeShape2.pt[48].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_49__pntx.o" "pasted__pCubeShape2.pt[49].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_49__pnty.o" "pasted__pCubeShape2.pt[49].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_49__pntz.o" "pasted__pCubeShape2.pt[49].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_50__pntx.o" "pasted__pCubeShape2.pt[50].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_50__pnty.o" "pasted__pCubeShape2.pt[50].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_50__pntz.o" "pasted__pCubeShape2.pt[50].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_51__pntx.o" "pasted__pCubeShape2.pt[51].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_51__pnty.o" "pasted__pCubeShape2.pt[51].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_51__pntz.o" "pasted__pCubeShape2.pt[51].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_52__pntx.o" "pasted__pCubeShape2.pt[52].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_52__pnty.o" "pasted__pCubeShape2.pt[52].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_52__pntz.o" "pasted__pCubeShape2.pt[52].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_53__pntx.o" "pasted__pCubeShape2.pt[53].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_53__pnty.o" "pasted__pCubeShape2.pt[53].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_53__pntz.o" "pasted__pCubeShape2.pt[53].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_54__pntx.o" "pasted__pCubeShape2.pt[54].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_54__pnty.o" "pasted__pCubeShape2.pt[54].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_54__pntz.o" "pasted__pCubeShape2.pt[54].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_55__pntx.o" "pasted__pCubeShape2.pt[55].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_55__pnty.o" "pasted__pCubeShape2.pt[55].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_55__pntz.o" "pasted__pCubeShape2.pt[55].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_56__pntx.o" "pasted__pCubeShape2.pt[56].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_56__pnty.o" "pasted__pCubeShape2.pt[56].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_56__pntz.o" "pasted__pCubeShape2.pt[56].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_57__pntx.o" "pasted__pCubeShape2.pt[57].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_57__pnty.o" "pasted__pCubeShape2.pt[57].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_57__pntz.o" "pasted__pCubeShape2.pt[57].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_58__pntx.o" "pasted__pCubeShape2.pt[58].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_58__pnty.o" "pasted__pCubeShape2.pt[58].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_58__pntz.o" "pasted__pCubeShape2.pt[58].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_59__pntx.o" "pasted__pCubeShape2.pt[59].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_59__pnty.o" "pasted__pCubeShape2.pt[59].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_59__pntz.o" "pasted__pCubeShape2.pt[59].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_60__pntx.o" "pasted__pCubeShape2.pt[60].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_60__pnty.o" "pasted__pCubeShape2.pt[60].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_60__pntz.o" "pasted__pCubeShape2.pt[60].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_61__pntx.o" "pasted__pCubeShape2.pt[61].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_61__pnty.o" "pasted__pCubeShape2.pt[61].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_61__pntz.o" "pasted__pCubeShape2.pt[61].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_62__pntx.o" "pasted__pCubeShape2.pt[62].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_62__pnty.o" "pasted__pCubeShape2.pt[62].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_62__pntz.o" "pasted__pCubeShape2.pt[62].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_63__pntx.o" "pasted__pCubeShape2.pt[63].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_63__pnty.o" "pasted__pCubeShape2.pt[63].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_63__pntz.o" "pasted__pCubeShape2.pt[63].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_64__pntx.o" "pasted__pCubeShape2.pt[64].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_64__pnty.o" "pasted__pCubeShape2.pt[64].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_64__pntz.o" "pasted__pCubeShape2.pt[64].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_65__pntx.o" "pasted__pCubeShape2.pt[65].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_65__pnty.o" "pasted__pCubeShape2.pt[65].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_65__pntz.o" "pasted__pCubeShape2.pt[65].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_66__pntx.o" "pasted__pCubeShape2.pt[66].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_66__pnty.o" "pasted__pCubeShape2.pt[66].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_66__pntz.o" "pasted__pCubeShape2.pt[66].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_67__pntx.o" "pasted__pCubeShape2.pt[67].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_67__pnty.o" "pasted__pCubeShape2.pt[67].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_67__pntz.o" "pasted__pCubeShape2.pt[67].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_68__pntx.o" "pasted__pCubeShape2.pt[68].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_68__pnty.o" "pasted__pCubeShape2.pt[68].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_68__pntz.o" "pasted__pCubeShape2.pt[68].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_69__pntx.o" "pasted__pCubeShape2.pt[69].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_69__pnty.o" "pasted__pCubeShape2.pt[69].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_69__pntz.o" "pasted__pCubeShape2.pt[69].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_70__pntx.o" "pasted__pCubeShape2.pt[70].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_70__pnty.o" "pasted__pCubeShape2.pt[70].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_70__pntz.o" "pasted__pCubeShape2.pt[70].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_71__pntx.o" "pasted__pCubeShape2.pt[71].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_71__pnty.o" "pasted__pCubeShape2.pt[71].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_71__pntz.o" "pasted__pCubeShape2.pt[71].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_72__pntx.o" "pasted__pCubeShape2.pt[72].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_72__pnty.o" "pasted__pCubeShape2.pt[72].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_72__pntz.o" "pasted__pCubeShape2.pt[72].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_73__pntx.o" "pasted__pCubeShape2.pt[73].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_73__pnty.o" "pasted__pCubeShape2.pt[73].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_73__pntz.o" "pasted__pCubeShape2.pt[73].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_74__pntx.o" "pasted__pCubeShape2.pt[74].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_74__pnty.o" "pasted__pCubeShape2.pt[74].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_74__pntz.o" "pasted__pCubeShape2.pt[74].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_75__pntx.o" "pasted__pCubeShape2.pt[75].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_75__pnty.o" "pasted__pCubeShape2.pt[75].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_75__pntz.o" "pasted__pCubeShape2.pt[75].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_76__pntx.o" "pasted__pCubeShape2.pt[76].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_76__pnty.o" "pasted__pCubeShape2.pt[76].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_76__pntz.o" "pasted__pCubeShape2.pt[76].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_77__pntx.o" "pasted__pCubeShape2.pt[77].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_77__pnty.o" "pasted__pCubeShape2.pt[77].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_77__pntz.o" "pasted__pCubeShape2.pt[77].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_78__pntx.o" "pasted__pCubeShape2.pt[78].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_78__pnty.o" "pasted__pCubeShape2.pt[78].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_78__pntz.o" "pasted__pCubeShape2.pt[78].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_79__pntx.o" "pasted__pCubeShape2.pt[79].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_79__pnty.o" "pasted__pCubeShape2.pt[79].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_79__pntz.o" "pasted__pCubeShape2.pt[79].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_80__pntx.o" "pasted__pCubeShape2.pt[80].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_80__pnty.o" "pasted__pCubeShape2.pt[80].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_80__pntz.o" "pasted__pCubeShape2.pt[80].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_81__pntx.o" "pasted__pCubeShape2.pt[81].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_81__pnty.o" "pasted__pCubeShape2.pt[81].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_81__pntz.o" "pasted__pCubeShape2.pt[81].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_82__pntx.o" "pasted__pCubeShape2.pt[82].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_82__pnty.o" "pasted__pCubeShape2.pt[82].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_82__pntz.o" "pasted__pCubeShape2.pt[82].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_83__pntx.o" "pasted__pCubeShape2.pt[83].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_83__pnty.o" "pasted__pCubeShape2.pt[83].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_83__pntz.o" "pasted__pCubeShape2.pt[83].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_84__pntx.o" "pasted__pCubeShape2.pt[84].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_84__pnty.o" "pasted__pCubeShape2.pt[84].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_84__pntz.o" "pasted__pCubeShape2.pt[84].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_85__pntx.o" "pasted__pCubeShape2.pt[85].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_85__pnty.o" "pasted__pCubeShape2.pt[85].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_85__pntz.o" "pasted__pCubeShape2.pt[85].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_86__pntx.o" "pasted__pCubeShape2.pt[86].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_86__pnty.o" "pasted__pCubeShape2.pt[86].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_86__pntz.o" "pasted__pCubeShape2.pt[86].pz"
+		;
+connectAttr "pasted__pCubeShape2_pnts_87__pntx.o" "pasted__pCubeShape2.pt[87].px"
+		;
+connectAttr "pasted__pCubeShape2_pnts_87__pnty.o" "pasted__pCubeShape2.pt[87].py"
+		;
+connectAttr "pasted__pCubeShape2_pnts_87__pntz.o" "pasted__pCubeShape2.pt[87].pz"
+		;
+connectAttr "group1_translateX.o" "group1.tx";
+connectAttr "group1_translateY.o" "group1.ty";
+connectAttr "group1_translateZ.o" "group1.tz";
+connectAttr "group1_visibility.o" "group1.v";
+connectAttr "group1_rotateX.o" "group1.rx";
+connectAttr "group1_rotateY.o" "group1.ry";
+connectAttr "group1_rotateZ.o" "group1.rz";
+connectAttr "group1_scaleX.o" "group1.sx";
+connectAttr "group1_scaleY.o" "group1.sy";
+connectAttr "group1_scaleZ.o" "group1.sz";
+connectAttr "pasted__pasted__pCube2_translateY.o" "pasted__pasted__pCube2.ty";
+connectAttr "pasted__pasted__pCube2_translateX.o" "pasted__pasted__pCube2.tx";
+connectAttr "pasted__pasted__pCube2_translateZ.o" "pasted__pasted__pCube2.tz";
+connectAttr "pasted__pasted__pCube2_scaleX.o" "pasted__pasted__pCube2.sx";
+connectAttr "pasted__pasted__pCube2_scaleY.o" "pasted__pasted__pCube2.sy";
+connectAttr "pasted__pasted__pCube2_scaleZ.o" "pasted__pasted__pCube2.sz";
+connectAttr "pasted__pasted__pCube2_visibility.o" "pasted__pasted__pCube2.v";
+connectAttr "pasted__pasted__pCube2_rotateX.o" "pasted__pasted__pCube2.rx";
+connectAttr "pasted__pasted__pCube2_rotateY.o" "pasted__pasted__pCube2.ry";
+connectAttr "pasted__pasted__pCube2_rotateZ.o" "pasted__pasted__pCube2.rz";
+connectAttr "pasted__pasted__pCubeShape2_pnts_0__pntx.o" "pasted__pasted__pCubeShape2.pt[0].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_0__pnty.o" "pasted__pasted__pCubeShape2.pt[0].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_0__pntz.o" "pasted__pasted__pCubeShape2.pt[0].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_1__pntx.o" "pasted__pasted__pCubeShape2.pt[1].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_1__pnty.o" "pasted__pasted__pCubeShape2.pt[1].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_1__pntz.o" "pasted__pasted__pCubeShape2.pt[1].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_2__pntx.o" "pasted__pasted__pCubeShape2.pt[2].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_2__pnty.o" "pasted__pasted__pCubeShape2.pt[2].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_2__pntz.o" "pasted__pasted__pCubeShape2.pt[2].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_3__pntx.o" "pasted__pasted__pCubeShape2.pt[3].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_3__pnty.o" "pasted__pasted__pCubeShape2.pt[3].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_3__pntz.o" "pasted__pasted__pCubeShape2.pt[3].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_4__pntx.o" "pasted__pasted__pCubeShape2.pt[4].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_4__pnty.o" "pasted__pasted__pCubeShape2.pt[4].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_4__pntz.o" "pasted__pasted__pCubeShape2.pt[4].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_5__pntx.o" "pasted__pasted__pCubeShape2.pt[5].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_5__pnty.o" "pasted__pasted__pCubeShape2.pt[5].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_5__pntz.o" "pasted__pasted__pCubeShape2.pt[5].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_6__pntx.o" "pasted__pasted__pCubeShape2.pt[6].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_6__pnty.o" "pasted__pasted__pCubeShape2.pt[6].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_6__pntz.o" "pasted__pasted__pCubeShape2.pt[6].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_7__pntx.o" "pasted__pasted__pCubeShape2.pt[7].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_7__pnty.o" "pasted__pasted__pCubeShape2.pt[7].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_7__pntz.o" "pasted__pasted__pCubeShape2.pt[7].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_8__pntx.o" "pasted__pasted__pCubeShape2.pt[8].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_8__pnty.o" "pasted__pasted__pCubeShape2.pt[8].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_8__pntz.o" "pasted__pasted__pCubeShape2.pt[8].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_9__pntx.o" "pasted__pasted__pCubeShape2.pt[9].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_9__pnty.o" "pasted__pasted__pCubeShape2.pt[9].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_9__pntz.o" "pasted__pasted__pCubeShape2.pt[9].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_10__pntx.o" "pasted__pasted__pCubeShape2.pt[10].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_10__pnty.o" "pasted__pasted__pCubeShape2.pt[10].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_10__pntz.o" "pasted__pasted__pCubeShape2.pt[10].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_11__pntx.o" "pasted__pasted__pCubeShape2.pt[11].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_11__pnty.o" "pasted__pasted__pCubeShape2.pt[11].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_11__pntz.o" "pasted__pasted__pCubeShape2.pt[11].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_12__pntx.o" "pasted__pasted__pCubeShape2.pt[12].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_12__pnty.o" "pasted__pasted__pCubeShape2.pt[12].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_12__pntz.o" "pasted__pasted__pCubeShape2.pt[12].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_13__pntx.o" "pasted__pasted__pCubeShape2.pt[13].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_13__pnty.o" "pasted__pasted__pCubeShape2.pt[13].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_13__pntz.o" "pasted__pasted__pCubeShape2.pt[13].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_14__pntx.o" "pasted__pasted__pCubeShape2.pt[14].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_14__pnty.o" "pasted__pasted__pCubeShape2.pt[14].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_14__pntz.o" "pasted__pasted__pCubeShape2.pt[14].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_15__pntx.o" "pasted__pasted__pCubeShape2.pt[15].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_15__pnty.o" "pasted__pasted__pCubeShape2.pt[15].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_15__pntz.o" "pasted__pasted__pCubeShape2.pt[15].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_16__pntx.o" "pasted__pasted__pCubeShape2.pt[16].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_16__pnty.o" "pasted__pasted__pCubeShape2.pt[16].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_16__pntz.o" "pasted__pasted__pCubeShape2.pt[16].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_17__pntx.o" "pasted__pasted__pCubeShape2.pt[17].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_17__pnty.o" "pasted__pasted__pCubeShape2.pt[17].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_17__pntz.o" "pasted__pasted__pCubeShape2.pt[17].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_18__pntx.o" "pasted__pasted__pCubeShape2.pt[18].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_18__pnty.o" "pasted__pasted__pCubeShape2.pt[18].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_18__pntz.o" "pasted__pasted__pCubeShape2.pt[18].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_19__pntx.o" "pasted__pasted__pCubeShape2.pt[19].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_19__pnty.o" "pasted__pasted__pCubeShape2.pt[19].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_19__pntz.o" "pasted__pasted__pCubeShape2.pt[19].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_20__pntx.o" "pasted__pasted__pCubeShape2.pt[20].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_20__pnty.o" "pasted__pasted__pCubeShape2.pt[20].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_20__pntz.o" "pasted__pasted__pCubeShape2.pt[20].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_21__pntx.o" "pasted__pasted__pCubeShape2.pt[21].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_21__pnty.o" "pasted__pasted__pCubeShape2.pt[21].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_21__pntz.o" "pasted__pasted__pCubeShape2.pt[21].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_22__pntx.o" "pasted__pasted__pCubeShape2.pt[22].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_22__pnty.o" "pasted__pasted__pCubeShape2.pt[22].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_22__pntz.o" "pasted__pasted__pCubeShape2.pt[22].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_23__pntx.o" "pasted__pasted__pCubeShape2.pt[23].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_23__pnty.o" "pasted__pasted__pCubeShape2.pt[23].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_23__pntz.o" "pasted__pasted__pCubeShape2.pt[23].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_24__pntx.o" "pasted__pasted__pCubeShape2.pt[24].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_24__pnty.o" "pasted__pasted__pCubeShape2.pt[24].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_24__pntz.o" "pasted__pasted__pCubeShape2.pt[24].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_25__pntx.o" "pasted__pasted__pCubeShape2.pt[25].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_25__pnty.o" "pasted__pasted__pCubeShape2.pt[25].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_25__pntz.o" "pasted__pasted__pCubeShape2.pt[25].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_26__pntx.o" "pasted__pasted__pCubeShape2.pt[26].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_26__pnty.o" "pasted__pasted__pCubeShape2.pt[26].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_26__pntz.o" "pasted__pasted__pCubeShape2.pt[26].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_27__pntx.o" "pasted__pasted__pCubeShape2.pt[27].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_27__pnty.o" "pasted__pasted__pCubeShape2.pt[27].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_27__pntz.o" "pasted__pasted__pCubeShape2.pt[27].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_28__pntx.o" "pasted__pasted__pCubeShape2.pt[28].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_28__pnty.o" "pasted__pasted__pCubeShape2.pt[28].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_28__pntz.o" "pasted__pasted__pCubeShape2.pt[28].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_29__pntx.o" "pasted__pasted__pCubeShape2.pt[29].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_29__pnty.o" "pasted__pasted__pCubeShape2.pt[29].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_29__pntz.o" "pasted__pasted__pCubeShape2.pt[29].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_30__pntx.o" "pasted__pasted__pCubeShape2.pt[30].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_30__pnty.o" "pasted__pasted__pCubeShape2.pt[30].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_30__pntz.o" "pasted__pasted__pCubeShape2.pt[30].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_31__pntx.o" "pasted__pasted__pCubeShape2.pt[31].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_31__pnty.o" "pasted__pasted__pCubeShape2.pt[31].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_31__pntz.o" "pasted__pasted__pCubeShape2.pt[31].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_32__pntx.o" "pasted__pasted__pCubeShape2.pt[32].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_32__pnty.o" "pasted__pasted__pCubeShape2.pt[32].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_32__pntz.o" "pasted__pasted__pCubeShape2.pt[32].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_33__pntx.o" "pasted__pasted__pCubeShape2.pt[33].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_33__pnty.o" "pasted__pasted__pCubeShape2.pt[33].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_33__pntz.o" "pasted__pasted__pCubeShape2.pt[33].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_34__pntx.o" "pasted__pasted__pCubeShape2.pt[34].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_34__pnty.o" "pasted__pasted__pCubeShape2.pt[34].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_34__pntz.o" "pasted__pasted__pCubeShape2.pt[34].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_35__pntx.o" "pasted__pasted__pCubeShape2.pt[35].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_35__pnty.o" "pasted__pasted__pCubeShape2.pt[35].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_35__pntz.o" "pasted__pasted__pCubeShape2.pt[35].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_36__pntx.o" "pasted__pasted__pCubeShape2.pt[36].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_36__pnty.o" "pasted__pasted__pCubeShape2.pt[36].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_36__pntz.o" "pasted__pasted__pCubeShape2.pt[36].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_37__pntx.o" "pasted__pasted__pCubeShape2.pt[37].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_37__pnty.o" "pasted__pasted__pCubeShape2.pt[37].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_37__pntz.o" "pasted__pasted__pCubeShape2.pt[37].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_38__pntx.o" "pasted__pasted__pCubeShape2.pt[38].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_38__pnty.o" "pasted__pasted__pCubeShape2.pt[38].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_38__pntz.o" "pasted__pasted__pCubeShape2.pt[38].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_39__pntx.o" "pasted__pasted__pCubeShape2.pt[39].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_39__pnty.o" "pasted__pasted__pCubeShape2.pt[39].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_39__pntz.o" "pasted__pasted__pCubeShape2.pt[39].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_40__pntx.o" "pasted__pasted__pCubeShape2.pt[40].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_40__pnty.o" "pasted__pasted__pCubeShape2.pt[40].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_40__pntz.o" "pasted__pasted__pCubeShape2.pt[40].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_41__pntx.o" "pasted__pasted__pCubeShape2.pt[41].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_41__pnty.o" "pasted__pasted__pCubeShape2.pt[41].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_41__pntz.o" "pasted__pasted__pCubeShape2.pt[41].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_42__pntx.o" "pasted__pasted__pCubeShape2.pt[42].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_42__pnty.o" "pasted__pasted__pCubeShape2.pt[42].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_42__pntz.o" "pasted__pasted__pCubeShape2.pt[42].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_43__pntx.o" "pasted__pasted__pCubeShape2.pt[43].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_43__pnty.o" "pasted__pasted__pCubeShape2.pt[43].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_43__pntz.o" "pasted__pasted__pCubeShape2.pt[43].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_44__pntx.o" "pasted__pasted__pCubeShape2.pt[44].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_44__pnty.o" "pasted__pasted__pCubeShape2.pt[44].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_44__pntz.o" "pasted__pasted__pCubeShape2.pt[44].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_45__pntx.o" "pasted__pasted__pCubeShape2.pt[45].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_45__pnty.o" "pasted__pasted__pCubeShape2.pt[45].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_45__pntz.o" "pasted__pasted__pCubeShape2.pt[45].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_46__pntx.o" "pasted__pasted__pCubeShape2.pt[46].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_46__pnty.o" "pasted__pasted__pCubeShape2.pt[46].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_46__pntz.o" "pasted__pasted__pCubeShape2.pt[46].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_47__pntx.o" "pasted__pasted__pCubeShape2.pt[47].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_47__pnty.o" "pasted__pasted__pCubeShape2.pt[47].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_47__pntz.o" "pasted__pasted__pCubeShape2.pt[47].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_48__pntx.o" "pasted__pasted__pCubeShape2.pt[48].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_48__pnty.o" "pasted__pasted__pCubeShape2.pt[48].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_48__pntz.o" "pasted__pasted__pCubeShape2.pt[48].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_49__pntx.o" "pasted__pasted__pCubeShape2.pt[49].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_49__pnty.o" "pasted__pasted__pCubeShape2.pt[49].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_49__pntz.o" "pasted__pasted__pCubeShape2.pt[49].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_50__pntx.o" "pasted__pasted__pCubeShape2.pt[50].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_50__pnty.o" "pasted__pasted__pCubeShape2.pt[50].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_50__pntz.o" "pasted__pasted__pCubeShape2.pt[50].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_51__pntx.o" "pasted__pasted__pCubeShape2.pt[51].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_51__pnty.o" "pasted__pasted__pCubeShape2.pt[51].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_51__pntz.o" "pasted__pasted__pCubeShape2.pt[51].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_52__pntx.o" "pasted__pasted__pCubeShape2.pt[52].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_52__pnty.o" "pasted__pasted__pCubeShape2.pt[52].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_52__pntz.o" "pasted__pasted__pCubeShape2.pt[52].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_53__pntx.o" "pasted__pasted__pCubeShape2.pt[53].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_53__pnty.o" "pasted__pasted__pCubeShape2.pt[53].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_53__pntz.o" "pasted__pasted__pCubeShape2.pt[53].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_54__pntx.o" "pasted__pasted__pCubeShape2.pt[54].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_54__pnty.o" "pasted__pasted__pCubeShape2.pt[54].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_54__pntz.o" "pasted__pasted__pCubeShape2.pt[54].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_55__pntx.o" "pasted__pasted__pCubeShape2.pt[55].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_55__pnty.o" "pasted__pasted__pCubeShape2.pt[55].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_55__pntz.o" "pasted__pasted__pCubeShape2.pt[55].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_56__pntx.o" "pasted__pasted__pCubeShape2.pt[56].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_56__pnty.o" "pasted__pasted__pCubeShape2.pt[56].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_56__pntz.o" "pasted__pasted__pCubeShape2.pt[56].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_57__pntx.o" "pasted__pasted__pCubeShape2.pt[57].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_57__pnty.o" "pasted__pasted__pCubeShape2.pt[57].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_57__pntz.o" "pasted__pasted__pCubeShape2.pt[57].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_58__pntx.o" "pasted__pasted__pCubeShape2.pt[58].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_58__pnty.o" "pasted__pasted__pCubeShape2.pt[58].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_58__pntz.o" "pasted__pasted__pCubeShape2.pt[58].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_59__pntx.o" "pasted__pasted__pCubeShape2.pt[59].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_59__pnty.o" "pasted__pasted__pCubeShape2.pt[59].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_59__pntz.o" "pasted__pasted__pCubeShape2.pt[59].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_60__pntx.o" "pasted__pasted__pCubeShape2.pt[60].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_60__pnty.o" "pasted__pasted__pCubeShape2.pt[60].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_60__pntz.o" "pasted__pasted__pCubeShape2.pt[60].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_61__pntx.o" "pasted__pasted__pCubeShape2.pt[61].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_61__pnty.o" "pasted__pasted__pCubeShape2.pt[61].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_61__pntz.o" "pasted__pasted__pCubeShape2.pt[61].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_62__pntx.o" "pasted__pasted__pCubeShape2.pt[62].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_62__pnty.o" "pasted__pasted__pCubeShape2.pt[62].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_62__pntz.o" "pasted__pasted__pCubeShape2.pt[62].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_63__pntx.o" "pasted__pasted__pCubeShape2.pt[63].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_63__pnty.o" "pasted__pasted__pCubeShape2.pt[63].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_63__pntz.o" "pasted__pasted__pCubeShape2.pt[63].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_64__pntx.o" "pasted__pasted__pCubeShape2.pt[64].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_64__pnty.o" "pasted__pasted__pCubeShape2.pt[64].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_64__pntz.o" "pasted__pasted__pCubeShape2.pt[64].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_65__pntx.o" "pasted__pasted__pCubeShape2.pt[65].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_65__pnty.o" "pasted__pasted__pCubeShape2.pt[65].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_65__pntz.o" "pasted__pasted__pCubeShape2.pt[65].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_66__pntx.o" "pasted__pasted__pCubeShape2.pt[66].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_66__pnty.o" "pasted__pasted__pCubeShape2.pt[66].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_66__pntz.o" "pasted__pasted__pCubeShape2.pt[66].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_67__pntx.o" "pasted__pasted__pCubeShape2.pt[67].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_67__pnty.o" "pasted__pasted__pCubeShape2.pt[67].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_67__pntz.o" "pasted__pasted__pCubeShape2.pt[67].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_68__pntx.o" "pasted__pasted__pCubeShape2.pt[68].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_68__pnty.o" "pasted__pasted__pCubeShape2.pt[68].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_68__pntz.o" "pasted__pasted__pCubeShape2.pt[68].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_69__pntx.o" "pasted__pasted__pCubeShape2.pt[69].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_69__pnty.o" "pasted__pasted__pCubeShape2.pt[69].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_69__pntz.o" "pasted__pasted__pCubeShape2.pt[69].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_70__pntx.o" "pasted__pasted__pCubeShape2.pt[70].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_70__pnty.o" "pasted__pasted__pCubeShape2.pt[70].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_70__pntz.o" "pasted__pasted__pCubeShape2.pt[70].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_71__pntx.o" "pasted__pasted__pCubeShape2.pt[71].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_71__pnty.o" "pasted__pasted__pCubeShape2.pt[71].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_71__pntz.o" "pasted__pasted__pCubeShape2.pt[71].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_72__pntx.o" "pasted__pasted__pCubeShape2.pt[72].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_72__pnty.o" "pasted__pasted__pCubeShape2.pt[72].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_72__pntz.o" "pasted__pasted__pCubeShape2.pt[72].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_73__pntx.o" "pasted__pasted__pCubeShape2.pt[73].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_73__pnty.o" "pasted__pasted__pCubeShape2.pt[73].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_73__pntz.o" "pasted__pasted__pCubeShape2.pt[73].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_74__pntx.o" "pasted__pasted__pCubeShape2.pt[74].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_74__pnty.o" "pasted__pasted__pCubeShape2.pt[74].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_74__pntz.o" "pasted__pasted__pCubeShape2.pt[74].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_75__pntx.o" "pasted__pasted__pCubeShape2.pt[75].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_75__pnty.o" "pasted__pasted__pCubeShape2.pt[75].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_75__pntz.o" "pasted__pasted__pCubeShape2.pt[75].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_76__pntx.o" "pasted__pasted__pCubeShape2.pt[76].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_76__pnty.o" "pasted__pasted__pCubeShape2.pt[76].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_76__pntz.o" "pasted__pasted__pCubeShape2.pt[76].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_77__pntx.o" "pasted__pasted__pCubeShape2.pt[77].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_77__pnty.o" "pasted__pasted__pCubeShape2.pt[77].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_77__pntz.o" "pasted__pasted__pCubeShape2.pt[77].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_78__pntx.o" "pasted__pasted__pCubeShape2.pt[78].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_78__pnty.o" "pasted__pasted__pCubeShape2.pt[78].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_78__pntz.o" "pasted__pasted__pCubeShape2.pt[78].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_79__pntx.o" "pasted__pasted__pCubeShape2.pt[79].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_79__pnty.o" "pasted__pasted__pCubeShape2.pt[79].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_79__pntz.o" "pasted__pasted__pCubeShape2.pt[79].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_80__pntx.o" "pasted__pasted__pCubeShape2.pt[80].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_80__pnty.o" "pasted__pasted__pCubeShape2.pt[80].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_80__pntz.o" "pasted__pasted__pCubeShape2.pt[80].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_81__pntx.o" "pasted__pasted__pCubeShape2.pt[81].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_81__pnty.o" "pasted__pasted__pCubeShape2.pt[81].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_81__pntz.o" "pasted__pasted__pCubeShape2.pt[81].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_82__pntx.o" "pasted__pasted__pCubeShape2.pt[82].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_82__pnty.o" "pasted__pasted__pCubeShape2.pt[82].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_82__pntz.o" "pasted__pasted__pCubeShape2.pt[82].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_83__pntx.o" "pasted__pasted__pCubeShape2.pt[83].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_83__pnty.o" "pasted__pasted__pCubeShape2.pt[83].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_83__pntz.o" "pasted__pasted__pCubeShape2.pt[83].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_84__pntx.o" "pasted__pasted__pCubeShape2.pt[84].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_84__pnty.o" "pasted__pasted__pCubeShape2.pt[84].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_84__pntz.o" "pasted__pasted__pCubeShape2.pt[84].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_85__pntx.o" "pasted__pasted__pCubeShape2.pt[85].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_85__pnty.o" "pasted__pasted__pCubeShape2.pt[85].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_85__pntz.o" "pasted__pasted__pCubeShape2.pt[85].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_86__pntx.o" "pasted__pasted__pCubeShape2.pt[86].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_86__pnty.o" "pasted__pasted__pCubeShape2.pt[86].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_86__pntz.o" "pasted__pasted__pCubeShape2.pt[86].pz"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_87__pntx.o" "pasted__pasted__pCubeShape2.pt[87].px"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_87__pnty.o" "pasted__pasted__pCubeShape2.pt[87].py"
+		;
+connectAttr "pasted__pasted__pCubeShape2_pnts_87__pntz.o" "pasted__pasted__pCubeShape2.pt[87].pz"
+		;
+connectAttr "pasted__polyExtrudeFace11.out" "pasted__pasted__pCubeShape2.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -768,14 +5090,6 @@ connectAttr "polyExtrudeFace3.out" "polyExtrudeFace4.ip";
 connectAttr "pCylinderShape1.wm" "polyExtrudeFace4.mp";
 connectAttr "polyExtrudeFace4.out" "polyExtrudeFace5.ip";
 connectAttr "pCylinderShape1.wm" "polyExtrudeFace5.mp";
-connectAttr "polyCube2.out" "polyExtrudeFace6.ip";
-connectAttr "pCubeShape1.wm" "polyExtrudeFace6.mp";
-connectAttr "polyExtrudeFace6.out" "polyExtrudeFace7.ip";
-connectAttr "pCubeShape1.wm" "polyExtrudeFace7.mp";
-connectAttr "polyExtrudeFace7.out" "polyExtrudeFace8.ip";
-connectAttr "pCubeShape1.wm" "polyExtrudeFace8.mp";
-connectAttr "polyExtrudeFace8.out" "polyExtrudeFace9.ip";
-connectAttr "pCubeShape1.wm" "polyExtrudeFace9.mp";
 connectAttr "pasted__polyExtrudeFace8.out" "pasted__polyExtrudeFace9.ip";
 connectAttr "pasted__pCubeShape2.wm" "pasted__polyExtrudeFace9.mp";
 connectAttr "pasted__polyExtrudeFace7.out" "pasted__polyExtrudeFace8.ip";
@@ -791,11 +5105,33 @@ connectAttr "pCylinderShape2.wm" "polyCut2.mp";
 connectAttr "polyCut2.out" "polyCollapseEdge1.ip";
 connectAttr "polyCollapseEdge1.out" "polyExtrudeFace10.ip";
 connectAttr "pCylinderShape2.wm" "polyExtrudeFace10.mp";
+connectAttr "polyTweak1.out" "polyExtrudeFace11.ip";
+connectAttr "pasted__pCubeShape2.wm" "polyExtrudeFace11.mp";
+connectAttr "pasted__polyExtrudeFace9.out" "polyTweak1.ip";
+connectAttr "pasted__polyTweak1.out" "pasted__polyExtrudeFace11.ip";
+connectAttr "pasted__pasted__pCubeShape2.wm" "pasted__polyExtrudeFace11.mp";
+connectAttr "pasted__pasted__polyExtrudeFace9.out" "pasted__polyTweak1.ip";
+connectAttr "pasted__pasted__polyExtrudeFace8.out" "pasted__pasted__polyExtrudeFace9.ip"
+		;
+connectAttr "pasted__pasted__pCubeShape2.wm" "pasted__pasted__polyExtrudeFace9.mp"
+		;
+connectAttr "pasted__pasted__polyExtrudeFace7.out" "pasted__pasted__polyExtrudeFace8.ip"
+		;
+connectAttr "pasted__pasted__pCubeShape2.wm" "pasted__pasted__polyExtrudeFace8.mp"
+		;
+connectAttr "pasted__pasted__polyExtrudeFace6.out" "pasted__pasted__polyExtrudeFace7.ip"
+		;
+connectAttr "pasted__pasted__pCubeShape2.wm" "pasted__pasted__polyExtrudeFace7.mp"
+		;
+connectAttr "pasted__pasted__polyCube2.out" "pasted__pasted__polyExtrudeFace6.ip"
+		;
+connectAttr "pasted__pasted__pCubeShape2.wm" "pasted__pasted__polyExtrudeFace6.mp"
+		;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "FloorMesh.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pTorusShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pasted__pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "pasted__pasted__pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
 // End of unit1tablenadmore.ma
